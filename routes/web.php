@@ -14,9 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('default');
+    return view('frontend.default');
 });
 
 Route::get('/marcas', function () {
-    return view('marcas');
+    return view('frontend.marcas');
+});
+
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
 });
