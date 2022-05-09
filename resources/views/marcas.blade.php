@@ -56,7 +56,7 @@
 
                     <li class="nav-item dropdown">
                         <a href="{{ url("/#contact") }}" class="nav-link smoothScroll">CONTACTO</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown"></div>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <ul>
                             <li class="dropdown-item"><a class="item-text" href="{{ url("/#contact") }}">SANTA ANA</a></li>
                             <li class="dropdown-item"><a class="item-text" href="{{ url("/#contacttitle") }}">SAN SALVADOR</a></li>
