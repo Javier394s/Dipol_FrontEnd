@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
 
-            <a class="navbar-brand" href="{{ url("index.html") }}"><img src="{{ asset("/images/log-azul-pnggg2.png") }}" class="img-fluid" alt="Logo" width="115"></a>
+            <a class="navbar-brand" href=""><img src="{{ asset("/images/log-azul-pnggg2.png") }}" class="img-fluid" alt="Logo" width="115"></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="{{ url("marcas.html") }}" class="nav-link smoothScroll">PRODUCTOS</a>
+                        <a href="{{ url("marcas") }}" class="nav-link smoothScroll">PRODUCTOS</a>
                     </li>
 
                     <li class="nav-item dropdown" style="list-style:none">
@@ -193,7 +193,7 @@
                     <div class="row">
 
                             <div class="col-lg-12 col-12 text-center mb-5">
-                                <h2 data-aos="fade-up" data-aos-delay="200">PROMOCIONES</h2>
+                                <h2 data-aos="fade-up" data-aos-delay="200">DESTACADOS</h2>
                             </div>
 
  
