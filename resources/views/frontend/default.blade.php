@@ -204,7 +204,8 @@
 
                                     <div class="class-info">
                                         <h3 class="mb-1">Bumper Frontal</h3>
-
+                                    
+                                        <span class="class-price">-%20</span>
 
                                         <p class="mt-3">Toyota Corolla</p>
                                         <p class="mt-3">Año 2011 - 2015</p>
@@ -230,6 +231,8 @@
 
                                     <div class="class-info">
                                         <h3 class="mb-1">Bumper Frontal</h3>
+                                    
+                                        <span class="class-price"></span>
 
                                         <p class="mt-3">Toyota Corolla</p>
                                         <p class="mt-3">Año 2011 - 2015</p>
