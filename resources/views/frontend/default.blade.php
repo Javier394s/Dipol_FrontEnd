@@ -186,74 +186,74 @@
     </section>
 
 
-    <!-- PRODUCTOS EN OFERTAS -->
-    <section class="class-section" id="promociones">
-            <div class="container">
-                    <div class="row">
+   <!-- PRODUCTOS EN OFERTAS -->
+   <section class="class-section" id="promociones">
+        <div class="container">
+                <div class="row">
 
-                            <div class="col-lg-12 col-12 text-center mb-5">
-                                <h2 data-aos="fade-up" data-aos-delay="200">DESTACADOS</h2>
-                            </div>
+                        <div class="col-lg-12 col-12 text-center mb-5">
+                            <h2 data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">DESTACADOS</h2>
+                        </div>
 
 
 
-                            <div class="mt-5 mt-lg-0 mt-md-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
-                                <div class="class-thumb">
-                                    <img src="{{ asset("/images/class/radiador.jpg") }}" class="img-fluid" alt="Class">
+                        <div class="col-lg-4 col-md-6 col-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                            <div class="class-thumb">
+                                <img src="http://api.multipartsv.com/images/class/radiador.jpg" class="img-fluid" alt="Class">
 
-                                    <div class="class-info">
-                                        <h3 class="mb-1">Bumper Frontal</h3>
+                                <div class="class-info">
+                                    <h3 class="mb-1">Bumper Frontal</h3>
+                                
+                                    <span class="class-price">-%20</span>
 
-                                        <span class="class-price">-%20</span>
-
-                                        <p class="mt-3">Toyota Corolla</p>
-                                        <p class="mt-3">Año 2011 - 2015</p>
-                                        <p class="mt-3">
-                                            <i class="fa fa-envelope-o mr-1"></i>
-                                            <a href="{{ url("#") }}" target="_blank">Ventas@multipartsv.com</a>
-                                        </p>
-                                        <p class="mt-3">
-                                            <i class="fa fa-phone mr-1"></i>
-                                            <a href="{{ url("#") }}" target="_blank">+503 2440 3772</a>
-                                        </p>
-                                        <p class="mt-3">
-                                            <i class="fa fa-whatsapp mr-1"></i>
-                                            <a href="{{ url("#") }}" target="_blank">+503 7783 9827</a>
-                                        </p>
-                                    </div>
+                                    <p class="mt-3">Toyota Corolla</p>
+                                    <p class="mt-3">Año 2011 - 2015</p>
+                                    <p class="mt-3">
+                                        <i class="fa fa-envelope-o mr-1"></i>
+                                        <a href="{{ url("{{ url(") }}"#") }}" target="_blank">Ventas@multipartsv.com</a>
+                                    </p>
+                                    <p class="mt-3">
+                                        <i class="fa fa-phone mr-1"></i> 
+                                        <a href="{{ url("{{ url(") }}"#") }}" target="_blank">+503 2440 3772</a>
+                                    </p>
+                                    <p class="mt-3">
+                                        <i class="fa fa-whatsapp mr-1"></i> 
+                                        <a href="{{ url("{{ url(") }}"#") }}" target="_blank">+503 7783 9827</a>
+                                    </p>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="class-thumb">
-                                    <img src="{{ asset("/images/class/bumper_frontal.jpg") }}" class="img-fluid" alt="Class">
+                        <div class="col-lg-4 col-md-6 col-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">
+                            <div class="class-thumb">
+                                <img src="http://api.multipartsv.com/images/class/bumper_frontal.jpg" class="img-fluid" alt="Class">
 
-                                    <div class="class-info">
-                                        <h3 class="mb-1">Bumper Frontal</h3>
-                                        <span class="class-price">-%15</span>
-                                        <span class="class-price"></span>
+                                <div class="class-info">
+                                    <h3 class="mb-1">Bumper Frontal</h3>
+                                
+                                    <span class="class-price">-%35</span>
 
-                                        <p class="mt-3">Toyota Corolla</p>
-                                        <p class="mt-3">Año 2011 - 2015</p>
-                                        <p class="mt-3">
-                                            <i class="fa fa-envelope-o mr-1"></i>
-                                            <a href="{{ url("#") }}" target="_blank">Ventas@multipartsv.com</a>
-                                        </p>
-                                        <p class="mt-3">
-                                            <i class="fa fa-phone mr-1"></i>
-                                            <a href="{{ url("#") }}" target="_blank">+503 2440 3772</a>
-                                        </p>
-                                        <p class="mt-3">
-                                            <i class="fa fa-whatsapp mr-1"></i>
-                                            <a href="{{ url("#") }}" target="_blank">+503 7783 9827</a>
-                                        </p>
-                                    </div>
-                                </div>
+                                    <p class="mt-3">Toyota Corolla</p>
+                                    <p class="mt-3">Año 2011 - 2015</p>
+                                    <p class="mt-3">
+                                        <i class="fa fa-envelope-o mr-1"></i>
+                                        <a href="{{ url("{{ url(") }}"#") }}" target="_blank">Ventas@multipartsv.com</a>
+                                    </p>
+                                    <p class="mt-3">
+                                        <i class="fa fa-phone mr-1"></i> 
+                                        <a href="{{ url("{{ url(") }}"#") }}" target="_blank">+503 2440 3772</a>
+                                    </p>
+                                    <p class="mt-3">
+                                        <i class="fa fa-whatsapp mr-1"></i> 
+                                        <a href="{{ url("{{ url(") }}"#") }}" target="_blank">+503 7783 9827</a>
+                                    </p>
                                 </div>
                             </div>
-                    </div>
-            </div>
-    </section>
+                            </div>
+                        </div>
+                </div>
+        
+</section>
 
     <!-- CONTACT -->
     <section class="contact section" id="contact">
