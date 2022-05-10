@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('default');
 });
 
-Route::get('/marcas', function () {
-    return view('marcas');
-});
+
+
+Route::get('/productos', [App\Http\Controllers\ProductController::class, 'index'])->name('productos');
+

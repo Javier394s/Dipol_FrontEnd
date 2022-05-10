@@ -44,7 +44,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="{{ url("marcas") }}" class="nav-link smoothScroll">PRODUCTOS</a>
+                        <a href="{{ url("productos") }}" class="nav-link smoothScroll">PRODUCTOS</a>
                     </li>
 
                     <li class="nav-item dropdown" style="list-style:none">
@@ -56,12 +56,12 @@
 
                     <li class="nav-item dropdown" style="list-style:none">
                         <a href="{{ url("#contact") }}" class="nav-link smoothScroll" id="navbarDropdown">CONTACTO</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown"></div>
                         <ul>
                             <li class="dropdown-item"><a class="item-text" href="{{ url("#contact") }}">SANTA ANA</a></li>
                             <li class="dropdown-item"><a class="item-text" href="{{ url("#contacttitle") }}">SAN SALVADOR</a></li>
                         </ul>
-                    </div>
+
                     </li>
                     
                     <li class="nav-item" style="list-style:none">
