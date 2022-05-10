@@ -41,7 +41,7 @@
 
 </head>
 <body>
-
+    <section class="content">
     <div class="container-for-admin">
         <!--Main Navigation-->
         <header>
@@ -57,7 +57,7 @@
     @include('layouts.inc.adminfooter')
 
     </div>
-
+    </section>
 
     <script src="{{ asset("/js/jquery.min.js") }}"></script>
     <script src="{{ asset("/js/bootstrap.min.js") }}"></script>

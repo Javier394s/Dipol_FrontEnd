@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+/*Sliders*/
+Route::get('home-slide',[App\Http\Controllers\Admin\SliderController::class, 'index'])->name('home-slide');
+Route::get('add-slide',[App\Http\Controllers\Admin\SliderController::class, 'create'])->name('add-slide');
+Route::post('store-slide',[App\Http\Controllers\Admin\SliderController::class, 'store'])->name('store-slide');
+
 Route::get('/', function () {
     return view('frontend.default');
 });

@@ -1,3 +1,4 @@
+ <section>
  <!-- Navbar -->
  <nav
        id="main-navbar"
@@ -67,3 +68,4 @@
     <!-- Container wrapper -->
     </nav>
 <!-- Navbar -->
+ </section>
