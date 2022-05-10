@@ -44,7 +44,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="{{ url("marcas") }}" class="nav-link smoothScroll">PRODUCTOS</a>
+                        <a href="{{ url("productos") }}" class="nav-link smoothScroll">PRODUCTOS</a>
                     </li>
 
                     <li class="nav-item dropdown" style="list-style:none">
@@ -61,6 +61,10 @@
                             <li class="dropdown-item"><a class="item-text" href="{{ url("#contact") }}">SANTA ANA</a></li>
                             <li class="dropdown-item"><a class="item-text" href="{{ url("#contacttitle") }}">SAN SALVADOR</a></li>
                         </ul>
+<<<<<<< HEAD
+=======
+
+>>>>>>> fd2b164770006ecefc1630d35b5480a931f883b9
                     </li>
 
                     <li class="nav-item" style="list-style:none">
@@ -230,8 +234,13 @@
 
                                     <div class="class-info">
                                         <h3 class="mb-1">Bumper Frontal</h3>
+<<<<<<< HEAD
 
                                         <span class="class-price">-%15</span>
+=======
+                                    
+                                        <span class="class-price"></span>
+>>>>>>> fd2b164770006ecefc1630d35b5480a931f883b9
 
                                         <p class="mt-3">Toyota Corolla</p>
                                         <p class="mt-3">Año 2011 - 2015</p>
