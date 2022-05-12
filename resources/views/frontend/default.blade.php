@@ -203,7 +203,7 @@
 
                                 <div class="class-info">
                                     <h3 class="mb-1">Bumper Frontal</h3>
-                                
+
                                     <span class="class-price">-%20</span>
 
                                     <p class="mt-3">Toyota Corolla</p>
@@ -213,11 +213,11 @@
                                         <a href="{{ url("{{ url(") }}"#") }}" target="_blank">Ventas@multipartsv.com</a>
                                     </p>
                                     <p class="mt-3">
-                                        <i class="fa fa-phone mr-1"></i> 
+                                        <i class="fa fa-phone mr-1"></i>
                                         <a href="{{ url("{{ url(") }}"#") }}" target="_blank">+503 2440 3772</a>
                                     </p>
                                     <p class="mt-3">
-                                        <i class="fa fa-whatsapp mr-1"></i> 
+                                        <i class="fa fa-whatsapp mr-1"></i>
                                         <a href="{{ url("{{ url(") }}"#") }}" target="_blank">+503 7783 9827</a>
                                     </p>
                                 </div>
@@ -230,7 +230,7 @@
 
                                 <div class="class-info">
                                     <h3 class="mb-1">Bumper Frontal</h3>
-                                
+
                                     <span class="class-price">-%35</span>
 
                                     <p class="mt-3">Toyota Corolla</p>
@@ -240,11 +240,11 @@
                                         <a href="{{ url("{{ url(") }}"#") }}" target="_blank">Ventas@multipartsv.com</a>
                                     </p>
                                     <p class="mt-3">
-                                        <i class="fa fa-phone mr-1"></i> 
+                                        <i class="fa fa-phone mr-1"></i>
                                         <a href="{{ url("{{ url(") }}"#") }}" target="_blank">+503 2440 3772</a>
                                     </p>
                                     <p class="mt-3">
-                                        <i class="fa fa-whatsapp mr-1"></i> 
+                                        <i class="fa fa-whatsapp mr-1"></i>
                                         <a href="{{ url("{{ url(") }}"#") }}" target="_blank">+503 7783 9827</a>
                                     </p>
                                 </div>
@@ -252,7 +252,7 @@
                             </div>
                         </div>
                 </div>
-        
+
 </section>
 
     <!-- CONTACT -->
@@ -329,33 +329,9 @@
         </div>
     </section>
 
-    <!-- ANUNCIOS -->
-    <section class="contact section" id="anuncios">
-        <div class="container">
-            <h2 class="mb-4" id="txt"> ANUNCIOS </h2>
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" data-interval="6000">
-                    <div class="carousel-item active">
-                        <img id="carouselAnuncios" class="d-block w-100" src="{{ asset("/images/anuncios/anun10Mayo.jpg") }}" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img id="carouselAnuncios" class="d-block w-100" src="{{ asset("/images/anuncios/anunProd.jpg") }}" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img id="carouselAnuncios" class="d-block w-100" src="{{ asset("/images/anuncios/anunExample.jpg") }}" alt="Third slide">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="{{ url("#carouselExampleControls") }}" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="{{ url("#carouselExampleControls") }}" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-                </div>
-        </div>
-    </section>
+    @include('frontend.slider.slider')
+
+
 
     <!-- FOOTER -->
     <footer class="site-footer">

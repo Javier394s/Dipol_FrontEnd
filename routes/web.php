@@ -18,10 +18,14 @@ use Illuminate\Support\Facades\Auth;
 Route::get('home-slide',[App\Http\Controllers\Admin\SliderController::class, 'index'])->name('home-slide');
 Route::get('add-slide',[App\Http\Controllers\Admin\SliderController::class, 'create'])->name('add-slide');
 Route::post('store-slide',[App\Http\Controllers\Admin\SliderController::class, 'store'])->name('store-slide');
+Route::get('edit-slide/{id}', [App\Http\Controllers\Admin\SliderController::class, 'edit'])->name('edit-slide');
+Route::put('update-slide/{id}', [App\Http\Controllers\Admin\SliderController::class, 'update'])->name('update-slide');
 
-Route::get('/', function () {
+
+/*Route::get('/', function () {
     return view('frontend.default');
-});
+});*/
+Route::get('/', [App\Http\Controllers\Frontend\FrontendController::class, 'index'])->name('default');
 
 Route::get('/marcas', function () {
     return view('frontend.marcas');

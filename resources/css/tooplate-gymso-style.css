@@ -48,7 +48,7 @@
     --h5-font-size:         22px;
     --h6-font-size:         22px;
 
-    
+
     --p-font-size:          18px;
     --base-font-size:       16px;
     --menu-font-size:       14px;
@@ -65,7 +65,7 @@
 
 
   /*---------------------------------------
-    TYPOGRAPHY              
+    TYPOGRAPHY
   -----------------------------------------*/
 
   h1,h2,h3,h4,h5,h6 {
@@ -116,7 +116,7 @@
     line-height: 1.5em;
   }
 
-  b, 
+  b,
   strong {
     font-weight: var(--font-weight-bold);
     letter-spacing: 0;
@@ -133,15 +133,15 @@
   margin:0;
   padding:0;
 }
- 
+
  /* items del menu */
- 
+
  #mnu ul li {
   background-color:#2e518b;
  }
- 
+
  /* enlaces del menu */
- 
+
  #mnu ul a {
   display:block;
   color:#fff;
@@ -172,9 +172,9 @@
   text-transform: uppercase;
   margin: 20px 0;
  }
- 
+
  /* items del menu */
- 
+
  #mnu ul li {
   position:relative;
   float:left;
@@ -233,9 +233,9 @@
 
 /* Dropdown Menu */
 .navbar-custom .dropdown:hover > .dropdown-menu {
-  display: block; 
+  display: block;
   min-width: auto;
-  animation: fadeDropdown 0.2s; 
+  animation: fadeDropdown 0.2s;
 }
 
 @keyframes fadeDropdown {
@@ -252,7 +252,7 @@
   cursor: default;
 }
 
-.navbar-custom .dropdown-toggle:focus { 
+.navbar-custom .dropdown-toggle:focus {
   outline: 0;
 }
 
@@ -299,23 +299,23 @@
     background:#eee;
     padding:0;
   }
-  
+
    /* items del menu desplegable */
-  
+
   #navbarNav ul ul li {
     float:left;
     width:180px
   }
-  
+
    /* enlaces de los items del menu desplegable */
-  
+
   #navbarNav ul ul a {
     line-height:120%;
     padding:10px 15px;
    }
-   
+
    /* items del menu desplegable al pasar el ratÃ³n */
-   
+
    #navbarNav ul li:hover > ul {
     display:block;
    }
@@ -366,7 +366,7 @@
 
 
   /*---------------------------------------
-    GENERAL               
+    GENERAL
   -----------------------------------------*/
 
   * {
@@ -389,8 +389,8 @@
     transition: all 0.3s ease;
   }
 
-  a:hover, 
-  a:active, 
+  a:hover,
+  a:active,
   a:focus {
     color: var(--primary-color);
     outline: none;
@@ -435,7 +435,7 @@
 
 
   /*---------------------------------------
-    MODAL              
+    MODAL
   -----------------------------------------*/
 
   .modal-content {
@@ -455,7 +455,7 @@
 
 
   /*---------------------------------------
-    FEATURE          
+    FEATURE
   -----------------------------------------*/
 
   .feature {
@@ -465,7 +465,7 @@
 
 
   /*---------------------------------------
-    MENU             
+    MENU
   -----------------------------------------*/
 
   .navbar {
@@ -568,7 +568,7 @@
   .navbar-toggler .navbar-toggler-icon::after {
     top: 8px;
   }
- 
+
 /* Navigation */
 .navbar-custom {
   padding: 2.125rem 1.5rem 2.125rem 2rem;
@@ -630,7 +630,7 @@
 /* end of navigation */
 
   /*---------------------------------------
-    HERO              
+    HERO
   -----------------------------------------*/
 
   .hero {
@@ -645,7 +645,7 @@
 
 
   /*---------------------------------------
-    CLASS               
+    CLASS
   -----------------------------------------*/
 
   .class-section {
@@ -653,7 +653,7 @@
     padding: 3rem 5rem;
     position: relative;
   }
-  
+
   .class-section h2 {
     text-shadow: 6px 0 38px rgba(187, 187, 187, 0.623);
     color: #fff;
@@ -691,7 +691,7 @@
 
 
   /*---------------------------------------
-    SCHEDULE             
+    SCHEDULE
   -----------------------------------------*/
 
   .schedule {
@@ -741,7 +741,7 @@
     text-transform: uppercase;
   }
 
-  .table-bordered td, 
+  .table-bordered td,
   .table-bordered th {
     border: 1px solid #212122;
   }
@@ -756,7 +756,7 @@
 
 
   /*---------------------------------------
-      ABOUT & TEAM            
+      ABOUT & TEAM
   -----------------------------------------*/
 
   .about {
@@ -802,7 +802,7 @@
 
 
   /*---------------------------------------
-    CONTACT              
+    CONTACT
   -----------------------------------------*/
 
   .webform input,
@@ -847,14 +847,14 @@
   }
 
   /*---------------------------------------
-    anuncios             
+    anuncios
   -----------------------------------------*/
-  #carouselAnuncios {    
+  #carouselAnuncios {
     height: 520px;
   }
 
   /*---------------------------------------
-    FOOTER              
+    FOOTER
   -----------------------------------------*/
 
   .site-footer {
@@ -879,7 +879,7 @@
 
 
   /*---------------------------------------
-    SOCIAL ICON              
+    SOCIAL ICON
   -----------------------------------------*/
 
   .social-icon {
@@ -911,7 +911,7 @@
     margin-bottom: 20px;
   }
   /*---------------------------------------
-     RESPONSIVE STYLES              
+     RESPONSIVE STYLES
   -----------------------------------------*/
 
   @media screen and (max-width: 992px) {

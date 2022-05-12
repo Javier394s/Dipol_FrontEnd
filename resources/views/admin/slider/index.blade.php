@@ -16,6 +16,39 @@
                 <div class="card-body">
                     {{--datos de los sliders--}}
 
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Encabezado</th>
+                                <th>Imagen</th>
+                                <th>Estado</th>
+                                <th>Editar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($slider as $item)
+                            <tr>
+                                <td>{{ $item->id }}</td>
+                                <td>{{ $item->heading }}</td>
+                                <td>
+                                    <img src="{{ asset('uploads/slider/'.$item->image) }}" width="100px" height="50px" alt="slider imagen">
+                                </td>
+                                <td>
+                                    @if ($item->status == '1')
+                                        Oculta
+                                    @else
+                                        Visible
+                                    @endif
+                                </td>
+                                <td>
+                                    <a href="{{ url('edit-slide/'.$item->id) }}" class="btn btn-success btn-sm">Edit</a>
+                                </td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
         </div>

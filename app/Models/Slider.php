@@ -4,10 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
-class Slider extends Model
+class Slider extends Eloquent
 {
-    protected $table = 'sliders';
+    protected $collection = 'sliders';
+    protected $connection = 'mongodb';
     protected $fillable = [
         'heading',
         'descripcion',
