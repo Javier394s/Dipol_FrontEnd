@@ -42,7 +42,7 @@
                                     @endif
                                 </td>
                                 <td>
-                                    <a href="{{ url('edit-slide/'.$item->id) }}" class="btn btn-success btn-sm">Edit</a>
+                                    <a href="{{ url('edit-slide/'.$item->id) }}" class="btn btn-success btn-sm">Editar</a>
                                 </td>
                             </tr>
                             @endforeach
