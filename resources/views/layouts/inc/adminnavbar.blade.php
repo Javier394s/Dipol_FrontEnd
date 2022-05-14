@@ -23,7 +23,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{}}">
+                <a class="navbar-brand" href="{{route('home')}}">
                     <img
                         src="{{ asset('images/log-azul-pnggg2.png')}}"
                         height="55"
