@@ -1,6 +1,6 @@
 <section>
   <!-- Sidebar -->
-  <nav style="margin-top: 30px"
+  <nav style="margin-top: 100px"
   id="sidebarMenu"
   class="collapse d-lg-block sidebar collapse bg-white"
   >

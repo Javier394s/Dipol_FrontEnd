@@ -45,17 +45,11 @@
     <div class="container-for-admin">
         <!--Main Navigation-->
         <header>
+
         @include('layouts.inc.adminnavbar')
 
         @include('layouts.inc.adminsidebar')
         </header>
-        <!--Main Navigation-->
-        <!--Main layout-->
-        <main style="margin-top: 58px">
-            @yield('content')
-        </main>
-    @include('layouts.inc.adminfooter')
-
     </div>
     </section>
 
