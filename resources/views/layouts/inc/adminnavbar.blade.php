@@ -22,11 +22,11 @@
       <!-- Brand -->
       <a class="navbar-brand" href="#">
         <img
-                src="./images/log-azul-pnggg2.png"
-                height="55"
-                alt="logo"
-                loading="lazy"
-                />
+            src="{{ asset('images/log-azul-pnggg2.png')}}"
+            height="55"
+            alt="logo"
+            loading="lazy"
+            />
       </a>
 
       <!-- Right links -->

@@ -15,26 +15,10 @@
       ><span>Slides Anuncios</span>
   </a>
   <a
-      href="{{ url("#") }}"
-      class="list-group-item list-group-item-action py-2 ripple"
-      ><i class="fas fa-lock fa-fw me-3"></i><span>Password</span></a
-      >
-  <a
-      href="{{ url("#") }}"
-      class="list-group-item list-group-item-action py-2 ripple"
-      ><i class="fas fa-chart-line fa-fw me-3"></i
-      ><span>Analytics</span></a
-  >
-  <a
-      href="{{ url("#") }}"
-      class="list-group-item list-group-item-action py-2 ripple"
-      ><i class="fas fa-users fa-fw me-3"></i><span>Users</span></a
-      >
-  <a
-      href="{{ url("#") }}"
-      class="list-group-item list-group-item-action py-2 ripple"
-      ><i class="fas fa-money-bill fa-fw me-3"></i><span>Sales</span></a
-      >
+    href="{{ url("#") }}"
+    class="list-group-item list-group-item-action py-2 ripple"
+    ><i class="fas fa-lock fa-fw me-3"></i><span>Productos</span></a
+    >
   </div>
 </div>
 </nav>
