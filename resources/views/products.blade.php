@@ -50,7 +50,7 @@ aria-label="Toggle navigation">
 <li class="nav-item dropdown" style="list-style:none">
 <a href="{{ url("/#promociones") }}" class="nav-link smoothScroll">DESTACADOS</a>
 <ul>
-<li class="dropdown-item"><a class="item-text" href="{{ url("#promociones") }}">OFERTAS</a></li>                            
+<li class="dropdown-item"><a class="item-text" href="{{ url("#promociones") }}">OFERTAS</a></li>
 </ul>
 </li>
 
@@ -65,7 +65,7 @@ aria-label="Toggle navigation">
 </li>
 
 <li class="nav-item" style="list-style:none">
-<a href="{{ url("/l#") }}" class="nav-link smoothScroll">ANUNCIOS</a>
+<a href="{{ url("/#anuncios") }}" class="nav-link smoothScroll">ANUNCIOS</a>
 </li>
 </ul>
 
@@ -101,7 +101,7 @@ aria-label="Toggle navigation">
                                 <img src="{{ asset("/images/class/bumper_frontal.jpg") }}" class="img-fluid" alt="Class">
 
                                     <div class="class-info">
-                                        <h3 class="mb-1">{{$product['title']}}</h3>                                    
+                                        <h3 class="mb-1">{{$product['title']}}</h3>
 
                                         <p class="mt-3">{{$product['model']}}</p>
                                         <p class="mt-3">Año(s): {{$product['years']}}</p>
@@ -110,11 +110,11 @@ aria-label="Toggle navigation">
                                             <a href="#" target="_blank">Ventas@multipartsv.com</a>
                                         </p>
                                         <p class="mt-3">
-                                            <i class="fa fa-phone mr-1"></i> 
+                                            <i class="fa fa-phone mr-1"></i>
                                             <a href="#" target="_blank">+503 2440 3772</a>
                                         </p>
                                         <p class="mt-3">
-                                            <i class="fa fa-whatsapp mr-1"></i> 
+                                            <i class="fa fa-whatsapp mr-1"></i>
                                             <a href="#" target="_blank">+503 7783 9827</a>
                                         </p>
                                     </div>
@@ -144,7 +144,7 @@ aria-label="Toggle navigation">
 
 <p><i class="fa fa-phone mr-1"></i> 2440 3772</p>
 </div>
-</div>  
+</div>
 </div>
 </div>
 </footer>

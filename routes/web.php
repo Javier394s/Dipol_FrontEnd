@@ -20,7 +20,7 @@ Route::get('add-slide',[App\Http\Controllers\Admin\SliderController::class, 'cre
 Route::post('store-slide',[App\Http\Controllers\Admin\SliderController::class, 'store'])->name('store-slide');
 Route::get('edit-slide/{id}', [App\Http\Controllers\Admin\SliderController::class, 'edit'])->name('edit-slide');
 Route::put('update-slide/{id}', [App\Http\Controllers\Admin\SliderController::class, 'update'])->name('update-slide');
-
+Route::delete('delete-slide/{id}', [App\Http\Controllers\Admin\SliderController::class, 'delete'])->name('delete-slide');
 
 /*Route::get('/', function () {
     return view('frontend.default');
