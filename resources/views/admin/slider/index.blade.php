@@ -23,7 +23,7 @@
                                 <th>Encabezado</th>
                                 <th>Imagen</th>
                                 <th>Estado</th>
-                                <th>Editar</th>
+                                <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -42,9 +42,13 @@
                                     @endif
                                 </td>
                                 <td>
-                                    <a href="{{ url('edit-slide/'.$item->id) }}" class="btn btn-success btn-sm">Editar</a>
+                                    <a href="{{ url('edit-slide/'.$item->id) }}" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a>
+                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal-delete-{{$item->id}}">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
                                 </td>
                             </tr>
+                            @include('admin.slider.delete')
                             @endforeach
                         </tbody>
                     </table>
