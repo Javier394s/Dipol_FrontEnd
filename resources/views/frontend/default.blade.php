@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-    <title>Multipart</title>
+    <title>Multipart - Home</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -190,41 +190,45 @@
    <section class="class-section" id="promociones">
         <div class="container">
                 <div class="row">
-
                         <div class="col-lg-12 col-12 text-center mb-5">
                             <h2 data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">DESTACADOS</h2>
                         </div>
+                        @if ($destacados)
+                            @foreach ($destacados as $item)
+                                <div class="col-lg-4 col-md-6 col-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="class-thumb">
+                                        <img src="{{ asset('uploads/destacados/'.$item->picture) }}" class="img-fluid" alt="Class">
 
+                                        <div class="class-info">
+                                            <h3 class="mb-1">{{ $item->name }}</h3>
 
+                                            <span class="class-price">-%{{ $item->discount }}</span>
 
-                        <div class="col-lg-4 col-md-6 col-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                            <div class="class-thumb">
-                                <img src="http://api.multipartsv.com/images/class/radiador.jpg" class="img-fluid" alt="Class">
-
-                                <div class="class-info">
-                                    <h3 class="mb-1">Bumper Frontal</h3>
-
-                                    <span class="class-price">-%20</span>
-
-                                    <p class="mt-3">Toyota Corolla</p>
-                                    <p class="mt-3">Año 2011 - 2015</p>
-                                    <p class="mt-3">
-                                        <i class="fa fa-envelope-o mr-1"></i>
-                                        <a href="{{ url("{{ url(") }}"#") }}" target="_blank">Ventas@multipartsv.com</a>
-                                    </p>
-                                    <p class="mt-3">
-                                        <i class="fa fa-phone mr-1"></i>
-                                        <a href="{{ url("{{ url(") }}"#") }}" target="_blank">+503 2440 3772</a>
-                                    </p>
-                                    <p class="mt-3">
-                                        <i class="fa fa-whatsapp mr-1"></i>
-                                        <a href="{{ url("{{ url(") }}"#") }}" target="_blank">+503 7783 9827</a>
-                                    </p>
+                                            <p class="mt-3">{{ $item->company_model }}</p>
+                                            <p class="mt-3">Año {{ $item->year_from }} - {{ $item->year_to }}</p>
+                                            <p class="mt-3">
+                                                <i class="fa fa-envelope-o mr-1"></i>
+                                                <a href="#">Ventas@multipartsv.com</a>
+                                            </p>
+                                            <p class="mt-3">
+                                                <i class="fa fa-phone mr-1"></i>
+                                                <a href="#">+503 2440 3772</a>
+                                            </p>
+                                            <p class="mt-3">
+                                                <i class="fa fa-whatsapp mr-1"></i>
+                                                <a href="#">+503 7783 9827</a>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            @endforeach
+                        @else
+                        <div class="col-lg-12 col-12 text-center mb-4">
+                            <h1>ATUALMENTE NÃO HÁ DESTACADOS!</h1>
                         </div>
+                        @endif
 
-                        <div class="col-lg-4 col-md-6 col-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">
+                        {{-- <div class="col-lg-4 col-md-6 col-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">
                             <div class="class-thumb">
                                 <img src="http://api.multipartsv.com/images/class/bumper_frontal.jpg" class="img-fluid" alt="Class">
 
@@ -249,10 +253,9 @@
                                     </p>
                                 </div>
                             </div>
-                            </div>
-                        </div>
+                        </div> --}}
                 </div>
-
+        </div>
 </section>
 
     <!-- CONTACT -->

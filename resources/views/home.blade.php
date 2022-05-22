@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-
+@section('title', 'Home')
 
 @section('content')
 <section style="margin-top: 150px">
