@@ -18,6 +18,10 @@
             href="{{ url("#") }}"
             class="list-group-item list-group-item-action py-2 ripple">
             <i class="fas fa-folder"></i><span> Productos</span></a>
+
+            <a href="{{ route('home-destacados') }}" class="list-group-item list-group-item-action py-2 ripple">
+                  <i class="fas fa-star fa-fw me-3"></i><span>Destacados</span>
+                </a>
     </div>
 </div>
 </nav>

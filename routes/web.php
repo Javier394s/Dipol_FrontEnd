@@ -5,14 +5,21 @@ use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
-| Web s
+| Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web s for your application. These
-| s are loaded by the ServiceProvider within a group which
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('home-destacados',[App\Http\Controllers\Admin\DestacadosController::class, 'index'])->name('home-destacados');
+Route::get('add-destacados',[App\Http\Controllers\Admin\DestacadosController::class, 'create'])->name('add-destacados');
+Route::post('store-destacados',[App\Http\Controllers\Admin\DestacadosController::class, 'store'])->name('store-destacados');
+Route::get('edit-destacados/{id}', [App\Http\Controllers\Admin\DestacadosController::class, 'edit'])->name('edit-destacados');
+Route::put('update-destacados/{id}', [App\Http\Controllers\Admin\DestacadosController::class, 'update'])->name('update-destacados');
+Route::delete('delete-destacados/{id}', [App\Http\Controllers\Admin\DestacadosController::class, 'destroy'])->name('delete-destacados');
 
 /*Sliders*/
 Route::get('home-slide',[App\Http\Controllers\Admin\SliderController::class, 'index'])->name('home-slide');
@@ -22,17 +29,7 @@ Route::get('edit-slide/{id}', [App\Http\Controllers\Admin\SliderController::clas
 Route::put('update-slide/{id}', [App\Http\Controllers\Admin\SliderController::class, 'update'])->name('update-slide');
 Route::delete('delete-slide/{id}', [App\Http\Controllers\Admin\SliderController::class, 'delete'])->name('delete-slide');
 
-/*Destacados*/
-Route::get('home-destacados',[App\Http\Controllers\Admin\DestacadosController::class, 'index'])->name('home-destacados');
-Route::get('add-destacados',[App\Http\Controllers\Admin\DestacadosController::class, 'create'])->name('add-destacados');
-Route::post('store-destacados',[App\Http\Controllers\Admin\DestacadosController::class, 'store'])->name('store-destacados');
-Route::get('edit-destacados/{id}', [App\Http\Controllers\Admin\DestacadosController::class, 'edit'])->name('edit-destacados');
-Route::put('update-destacados/{id}', [App\Http\Controllers\Admin\DestacadosController::class, 'update'])->name('update-destacados');
-Route::delete('delete-destacados/{id}', [App\Http\Controllers\Admin\DestacadosController::class, 'destroy'])->name('delete-destacados');
-
-
-
-/*::get('/', function () {
+/*Route::get('/', function () {
     return view('frontend.default');
 });*/
 Route::get('/', [App\Http\Controllers\Frontend\FrontendController::class, 'index'])->name('default');
@@ -49,7 +46,7 @@ Route::get('/login', function () {
     return view('layouts.app');
 });
 
-Auth::s();
+Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
