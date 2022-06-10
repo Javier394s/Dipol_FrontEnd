@@ -98,7 +98,7 @@ aria-label="Toggle navigation">
 
 <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
                                 <div class="class-thumb">
-                                <img src="{{ asset("/images/class/bumper_frontal.jpg") }}" class="img-fluid" alt="Class">
+                                <img src="{{ asset('uploads/products/'.$product->image) }}"  class="img-fluid" alt="product imagen">
 
                                     <div class="class-info">
                                         <h3 class="mb-1">{{$product['title']}}</h3>
