@@ -12,8 +12,8 @@
             <div class="card">
                 <div class="card-header">
                     <h4>
-                        Destacados
-                        <a style="margin-left: 500px" href="{{ route('add-destacados') }}" class="btn btn-primary btn-sm float-right">Agregar Destacados</a>
+                        Ofertas
+                        <a style="margin-left: 700px" href="{{ route('add-destacados') }}" class="btn btn-primary btn-sm float-right">Agregar Destacados</a>
                     </h4>
                 </div>
                 <div class="card-body">
