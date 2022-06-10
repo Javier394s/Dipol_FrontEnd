@@ -3,13 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+// use Illuminate\Database\Eloquent\Model as Eloquent;
 use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
 class Slider extends Eloquent
 {
     protected $collection = 'sliders';
-    protected $connection = 'mongodb';
+    // protected $connection = 'mongodb';
     protected $fillable = [
         'heading',
         'descripcion',
