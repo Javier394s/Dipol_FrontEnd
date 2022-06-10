@@ -25,32 +25,3 @@
 
 </div>
 </section>
-
-<!-- ANUNCIOS
-<section class="contact section" id="anuncios">
-    <div class="container">
-        <h2 class="mb-4" id="txt"> ANUNCIOS </h2>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" data-interval="6000">
-                <div class="carousel-item active">
-                    <img id="carouselAnuncios" class="d-block w-100" src="{{ asset("/images/anuncios/anun10Mayo.jpg") }}" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img id="carouselAnuncios" class="d-block w-100" src="{{ asset("/images/anuncios/anunProd.jpg") }}" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img id="carouselAnuncios" class="d-block w-100" src="{{ asset("/images/anuncios/anunExample.jpg") }}" alt="Third slide">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="{{ url("#carouselExampleControls") }}" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="{{ url("#carouselExampleControls") }}" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-            </div>
-    </div>
-</section>
--->
