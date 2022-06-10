@@ -62,8 +62,8 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="deleteModalLabel">¿Seguro que desea eliminar este slide?</h5>
-          <button type="button" class="btn btn-sm border shadow-0" data-dismiss="modal" aria-label="Close">
+            <h5 class="modal-title" id="deleteModalLabel">¿Seguro que desea eliminar este slide?</h5>
+            <button type="button" class="btn btn-sm border shadow-0" data-dismiss="modal" aria-label="Close">
             <i class="fa fa-times"></i>
           </button>
         </div>
