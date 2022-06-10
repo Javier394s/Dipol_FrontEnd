@@ -48,7 +48,7 @@
                                     {{-- <a id="{{ $item->id }}" onclick="document.getElementById('id01').style.display='block'" href="#" class="btn btn-danger btn-sm">Delete</a> --}}
                                     <button type="button" id="{{ $item->id }}" onclick="action(this.id)" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal">
                                         Eliminar
-                                      </button>
+                                    </button>
                                 </td>
                             </tr>
                             @endforeach
@@ -72,7 +72,7 @@
         <div class="modal-footer">
             <button type="button" class="btn btn-muted" data-dismiss="modal">Cancelar</button>
             <form method="post" id="deleteForm" action="">
-                @csrf 
+                @csrf
                 @method('delete')
                 <button type="submit" class="btn btn-danger">Eliminar</button>
             </form>

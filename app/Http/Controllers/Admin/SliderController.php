@@ -71,10 +71,23 @@ class SliderController extends Controller
         return redirect()->back()->with('status','Slider actualizado correctamente');
     }
 
-    public function delete($id){
+    /*public function delete($id){
         $items= Slider::findOrFail($id);
         $items->delete();
         return view('admin.slider.index');
+    }*/
+    public function destroy($id)
+    {
+        $items= Slider::findOrFail($id);
+
+        $destination = 'uploads/slider/'.$items->picture;
+        if(File::exists($destination)){
+            File::delete($destination);
+        }
+
+        $items->delete();
+
+        return redirect()->route('home-slide')->with('status','Slide eliminado correctamente');
     }
 
 }

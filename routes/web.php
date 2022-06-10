@@ -20,7 +20,8 @@ Route::post('store-ofertas',[App\Http\Controllers\Admin\OfertasController::class
 Route::get('edit-ofertas/{id}', [App\Http\Controllers\Admin\OfertasController::class, 'edit'])->name('edit-ofertas');
 Route::put('update-ofertas/{id}', [App\Http\Controllers\Admin\OfertasController::class, 'update'])->name('update-ofertas');
 Route::delete('delete-ofertas/{id}', [App\Http\Controllers\Admin\OfertasController::class, 'destroy'])->name('delete-ofertas');
-/*Sliders*/
+
+/*Destacados*/
 Route::get('home-destacados',[App\Http\Controllers\Admin\DestacadosController::class, 'index'])->name('home-destacados');
 Route::get('add-destacados',[App\Http\Controllers\Admin\DestacadosController::class, 'create'])->name('add-destacados');
 Route::post('store-destacados',[App\Http\Controllers\Admin\DestacadosController::class, 'store'])->name('store-destacados');
@@ -34,7 +35,7 @@ Route::get('add-slide',[App\Http\Controllers\Admin\SliderController::class, 'cre
 Route::post('store-slide',[App\Http\Controllers\Admin\SliderController::class, 'store'])->name('store-slide');
 Route::get('edit-slide/{id}', [App\Http\Controllers\Admin\SliderController::class, 'edit'])->name('edit-slide');
 Route::put('update-slide/{id}', [App\Http\Controllers\Admin\SliderController::class, 'update'])->name('update-slide');
-Route::delete('delete-slide/{id}', [App\Http\Controllers\Admin\SliderController::class, 'delete'])->name('delete-slide');
+Route::delete('delete-slide/{id}', [App\Http\Controllers\Admin\SliderController::class, 'destroy'])->name('delete-slide');
 
 /*Route::get('/', function () {
     return view('frontend.default');
