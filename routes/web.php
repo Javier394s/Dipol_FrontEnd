@@ -44,3 +44,6 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/productos', [App\Http\Controllers\ProductController::class, 'index'])->name('productos');
+Route::get('home-products',[App\Http\Controllers\ProductController::class, 'index2'])->name('home-product');
+Route::get('add-product',[App\Http\Controllers\ProductController::class, 'create'])->name('add-product');
+Route::post('store-product',[App\Http\Controllers\ProductController::class, 'store'])->name('store-product');

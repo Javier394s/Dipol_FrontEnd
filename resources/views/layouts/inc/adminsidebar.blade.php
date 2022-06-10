@@ -15,7 +15,7 @@
       ><span>Slides Anuncios</span>
   </a>
   <a
-    href="{{ url("#") }}"
+    href="{{ url('home-products') }}"
     class="list-group-item list-group-item-action py-2 ripple"
     ><i class="fas fa-lock fa-fw me-3"></i><span>Productos</span></a
     >

@@ -7,7 +7,7 @@ use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
 class Product extends Eloquent
 {
-    protected $fillable  = ['codprod', 'nombreprod','descriprod', 'typprod', 'costunit', 'cantprod'];
+    protected $fillable  = ['brand', 'model','years', 'image' ,'title', 'dateAdded', 'addedby', 'datetoFinish'];
     protected $connection = 'mongodb';
     protected $collection = 'products';
 }
