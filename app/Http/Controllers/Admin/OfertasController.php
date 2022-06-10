@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Destacados;
+use App\Models\Ofertas;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\File;
@@ -23,21 +23,18 @@ class OfertasController extends Controller
     public function store(Request $request)
     {
         $ofertas = new Ofertas;
-        $ofertas->name = $request->input('name');
-        $ofertas->company_model = $request->input('company_model');
-        $ofertas->year_from = $request->input('year_from');
-        $ofertas->year_to = $request->input('year_to');
-        $ofertas->discount = $request->input('discount');
-        if($request->hasfile('picture'))
+        $ofertas->heading = $request->input('heading');
+        $ofertas->descripcion = $request->input('descripcion');
+        if($request->hasfile('image'))
         {
-            $file = $request->file('picture');
+            $file = $request->file('image');
             $extention = $file->getClientOriginalExtension();
             $filename = time().'.'.$extention;
             $file->move('uploads/ofertas/', $filename);
-            $ofertas->picture = $filename;
+            $ofertas->image = $filename;
         }
         $ofertas->save();
-        return redirect()->back()->with('status','ofertas agregado correctamente');
+        return redirect()->back()->with('status','Oferta agregada correctamente');
     }
 
     public function edit($id)
@@ -48,34 +45,32 @@ class OfertasController extends Controller
 
     public function update(Request $request, $id)
     {
-        $ofertas = Destacados::find($id);
-        $ofertas->name = $request->input('name');
-        $ofertas->company_model = $request->input('company_model');
-        $ofertas->year_from = $request->input('year_from');
-        $ofertas->year_to = $request->input('year_to');
-        $ofertas->discount = $request->input('discount');
-        if($request->hasfile('picture'))
+        $ofertas = Ofertas::find($id);
+        $ofertas->heading = $request->input('heading');
+        $ofertas->descripcion = $request->input('descripcion');
+        if($request->hasfile('image'))
         {
-            $destination = 'uploads/ofertas/'.$ofertas->picture;
+            $destination = 'uploads/ofertas/'.$ofertas->image;
             if(File::exists($destination)){
                 File::delete($destination);
             }
 
-            $file = $request->file('picture');
+            $file = $request->file('image');
             $extention = $file->getClientOriginalExtension();
             $filename = time().'.'.$extention;
             $file->move('uploads/ofertas/', $filename);
-            $ofertas->picture = $filename;
+            $ofertas->image = $filename;
         }
+        $ofertas->status = $request->input('status') == true ? '1':'0';
         $ofertas->save();
-        return redirect()->back()->with('status','Ofertas actualizado correctamente');
+        return redirect()->back()->with('status','Oferta actualizada correctamente');
     }
 
     public function destroy($id)
     {
         $ofertas = Ofertas::find($id);
 
-        $destination = 'uploads/ofertas/'.$destacados->picture;
+        $destination = 'uploads/ofertas/'.$ofertas->picture;
         if(File::exists($ofertas)){
             File::delete($ofertas);
         }

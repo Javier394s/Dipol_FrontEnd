@@ -8,7 +8,13 @@ use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
 class Ofertas extends Eloquent
 {
-    protected $fillable  = ['name', 'company_model','year_from', 'year_to', 'discount', 'picture'];
-    // protected $connection = 'mongodb';
     protected $collection = 'ofertas';
+    protected $fillable  = [
+    'heading',
+    'descripcion',
+    'image',
+    'status',
+    ];
+    // protected $connection = 'mongodb';
+
 }
