@@ -37,9 +37,18 @@ Route::get('edit-slide/{id}', [App\Http\Controllers\Admin\SliderController::clas
 Route::put('update-slide/{id}', [App\Http\Controllers\Admin\SliderController::class, 'update'])->name('update-slide');
 Route::delete('delete-slide/{id}', [App\Http\Controllers\Admin\SliderController::class, 'destroy'])->name('delete-slide');
 
-/*Route::get('/', function () {
-    return view('frontend.default');
-});*/
+/*Products*/
+Route::get('productos', [App\Http\Controllers\ProductController::class, 'index'])->name('productos');
+Route::get('home-products',[App\Http\Controllers\ProductController::class, 'index2'])->name('home-product');
+Route::get('add-product',[App\Http\Controllers\ProductController::class, 'create'])->name('add-product');
+Route::post('store-product',[App\Http\Controllers\ProductController::class, 'store'])->name('store-product');
+
+
+Route::get('edit-product/{id}', [App\Http\Controllers\ProductController::class, 'edit'])->name('edit-product');
+Route::put('update-product/{id}', [App\Http\Controllers\ProductController::class, 'update'])->name('update-product');
+Route::delete('delete-product/{id}', [App\Http\Controllers\ProductController::class, 'destroy'])->name('delete-product');
+
+
 Route::get('/', [App\Http\Controllers\Frontend\FrontendController::class, 'index'])->name('default');
 
 Route::get('/marcas', function () {
@@ -58,7 +67,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/productos', [App\Http\Controllers\ProductController::class, 'index'])->name('productos');
-Route::get('home-products',[App\Http\Controllers\ProductController::class, 'index2'])->name('home-product');
-Route::get('add-product',[App\Http\Controllers\ProductController::class, 'create'])->name('add-product');
-Route::post('store-product',[App\Http\Controllers\ProductController::class, 'store'])->name('store-product');
+
+
