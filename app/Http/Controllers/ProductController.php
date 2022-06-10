@@ -60,13 +60,14 @@ class ProductController extends Controller
     public function update(Request $request, $id) //Cambiar
     {
         $product = Product::find($id);
-        $product->heading = $request->input('heading');
-        $product->descripcion = $request->input('descripcion');
-        $product->link = $request->input('link');
-        $product->link_name = $request->input('link_name');
+        $product->brand = $request->input('brand');
+        $product->model = $request->input('model');
+        $product->years = $request->input('years');
+        $product->title = $request->input('title');
+
         if($request->hasfile('image'))
         {
-            $destination = 'uploads/slider/'.$slider->image;
+            $destination = 'uploads/products/'.$product->image;
             if(File::exists($destination)){
                 File::delete($destination);
             }
@@ -74,12 +75,25 @@ class ProductController extends Controller
             $file = $request->file('image');
             $extention = $file->getClientOriginalExtension();
             $filename = time().'.'.$extention;
-            $file->move('uploads/slider/', $filename);
-            $slider->image = $filename;
+            $file->move('uploads/products/', $filename);
+            $product->image = $filename;
         }
-        $slider->status = $request->input('status') == true ? '1':'0';
-        $slider->save();
-        return redirect()->back()->with('status','Slider actualizado correctamente');
+        $product->save();
+        return redirect()->back()->with('status','Producto actualizado correctamente');
+    }
+
+    public function destroy($id)
+    {
+        $items= Product::findOrFail($id);
+
+        $destination = 'uploads/products/'.$items->picture;
+        if(File::exists($destination)){
+            File::delete($destination);
+        }
+
+        $items->delete();
+
+        return redirect()->route('home-product')->with('status','Producto eliminado correctamente');
     }
 
 }

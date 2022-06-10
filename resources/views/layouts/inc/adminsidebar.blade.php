@@ -17,7 +17,7 @@
   <a
     href="{{ url('home-products') }}"
     class="list-group-item list-group-item-action py-2 ripple"
-    ><i class="fas fa-lock fa-fw me-3"></i><span>Productos</span></a>
+    ><i class="fas fa-folder fa-fw me-3"></i><span>Productos</span></a>
     <a href="{{ route('home-destacados') }}" class="list-group-item list-group-item-action py-2 ripple">
                   <i class="fas fa-star fa-fw me-3"></i><span>Destacados</span>
     </a>
