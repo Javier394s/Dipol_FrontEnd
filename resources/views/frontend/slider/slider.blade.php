@@ -6,11 +6,14 @@
         @php $i = 1; @endphp
         @foreach ($slider as $slideritem)
 
-        <div class="carousel-item {{ $i == '1' ? 'active':'' }}">
+        <div class="carousel-item {{ $i == '1' ? 'active':'' }}" >
             @php
                 $i++;
             @endphp
-            <img id="carouselAnuncios" class="d-block w-100" src="{{ asset('uploads/slider/'.$slideritem->image) }}" alt="slide imagen">
+            <div style="display: flex; justify-content: center;
+            align-items: center;">
+                <img  id="carouselAnuncios" class="d-block w-75" src="{{ asset('uploads/slider/'.$slideritem->image) }}" alt="slide imagen">
+            </div>
         </div>
         @endforeach
     </div>
