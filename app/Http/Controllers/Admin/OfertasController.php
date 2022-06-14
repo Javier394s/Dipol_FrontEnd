@@ -33,6 +33,7 @@ class OfertasController extends Controller
             $file->move('uploads/ofertas/', $filename);
             $ofertas->image = $filename;
         }
+        $ofertas->status = $request->input('status') == true ? '1':'0';
         $ofertas->save();
         return redirect()->back()->with('status','Oferta agregada correctamente');
     }

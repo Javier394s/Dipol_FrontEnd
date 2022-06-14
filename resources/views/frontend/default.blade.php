@@ -49,9 +49,9 @@
 
                     <li class="nav-item dropdown" style="list-style:none">
                         <a href="{{ url("#promociones") }}" class="nav-link smoothScroll">OFERTAS</a>
-                        {{--<ul>
-                            <li class="dropdown-item"><a class="item-text" href="{{ url("#ofertas") }}">DESTACADOS</a></li>
-                        </ul>--}}
+                        <ul>
+                            <li class="dropdown-item"><a class="item-text" href="{{ url("#destacados") }}">DESTACADOS</a></li>
+                        </ul>
                     </li>
 
                     <li class="nav-item dropdown" style="list-style:none">
@@ -228,8 +228,8 @@
                         </div>
                         @endif
                 </div>
-                {{--@include('frontend.ofertas.ofertas')--}}
         </div>
+        @include('frontend.ofertas.ofertas')
 </section>
 
     <!-- CONTACT -->
