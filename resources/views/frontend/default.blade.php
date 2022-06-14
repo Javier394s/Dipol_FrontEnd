@@ -275,7 +275,7 @@
                     <div class="ml-auto col-lg-5 col-md-6 col-12">
                         <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Donde nos puedes <span>encontrar</span></h2>
 
-                        <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i> Av. Maria Auxiliadora, Santa Ana. 4º Avenida Sur Entre 23 y 25 Calle Poniente</p>
+                        <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i>Colonia Layco 27 calle poniente y 21 avenida norte # 1214 San Salvador</p>
 
                         <div class="google-map" data-aos="fade-up" data-aos-delay="900">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1935.7912090104467!2d-89.56172934210272!3d13.983443600274796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3d9b89368ad4f71d!2zMTPCsDU5JzAwLjQiTiA4OcKwMzMnMzguMyJX!5e0!3m2!1ses!2ssv!4v1649202620494!5m2!1ses!2ssv" width="1920" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -291,11 +291,11 @@
                         </p>
                         <p class="mt-3">
                             <i class="fa fa-phone mr-1"></i>
-                            <a href="{{ url("#") }}" target="_blank">+503 2440 3772</a>
+                            <a href="{{ url("#") }}" target="_blank">+503 2281 0421</a>
                         </p>
                         <p class="mt-3">
                             <i class="fa fa-whatsapp mr-1"></i>
-                            <a href="{{ url("#") }}" target="_blank">+503 7783 9827</a>
+                            <a href="{{ url("#") }}" target="_blank">+503 6928 2674</a>
                         </p>
 
                         <img src="{{ asset("/images/multipart.jpg") }}" class="img-fluid" alt="Logo">
