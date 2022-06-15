@@ -175,7 +175,7 @@
                                 <p data-aos="fade-up" data-aos-delay="500">Estamos ubicados en Santa Ana atrás del centro médico
                                     <a rel="nofollow" href="https://www.google.com/maps/place/MultipartSV+S.A+de+C.V/@13.9823191,-89.5624378,17z/data=!4m5!3m4!1s0x8f62e90e8e1ffb41:0x9edb7b93129cb7e8!8m2!3d13.9833863!4d-89.5606675" target="_blank">
                                         (Ver en Google Maps) </a>
-                                    y muy pronto contaremos con una sucursal en San Salvador.
+                                    y contamos con una sucursal en San Salvador ubicada en Colonia Layco 27 calle poniente y 21 avenida norte # 1214 San Salvador.
                                     En Multipart nos caracterizamos por la comercialización de productos de excelente calidad,
                                     elaborados con las mejores tecnologías, al mismo tiempo, contamos con un personal altamente
                                     calificado con el propósito de satisfacer las necesidades y expectativas de nuestros clientes.
