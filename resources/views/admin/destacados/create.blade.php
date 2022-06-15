@@ -42,6 +42,10 @@
                             <label for="">Descuento</label>
                             <input type="text" name="discount" class="form-control">
                         </div>
+                        <div class="form-group">
+                            <label for="">Fecha a eliminar</label>
+                            <input type="datetime-local" name="date" class="form-control">
+                        </div>
                         <div class="form-group pb-2">
                             <label for="">Subir Imagen</label>
                             <input type="file" name="picture" class="form-control">

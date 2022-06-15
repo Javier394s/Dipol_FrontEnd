@@ -8,7 +8,7 @@ use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
 class Destacados extends Eloquent
 {
-    protected $fillable  = ['name', 'company_model','year_from', 'year_to', 'discount', 'picture'];
+    protected $fillable  = ['name', 'company_model','year_from', 'year_to', 'discount', 'picture', 'date'];
     // protected $connection = 'mongodb';
     protected $collection = 'destacados';
 }
