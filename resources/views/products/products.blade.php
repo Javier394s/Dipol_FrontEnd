@@ -102,8 +102,8 @@ aria-label="Toggle navigation">
 
                                     <div class="class-info">
                                         <h3 class="mb-1">{{$product['title']}}</h3>
-                                        <p class="mt-3">{{$product['brand']}}</p>
-                                        <p class="mt-3">{{$product['model']}}</p>
+                                        <p class="mt-3">{{$product['brand']}} - {{$product['model']}}</p>
+                                        
                                         <p class="mt-3">Año(s): {{$product['years']}}</p>
                                         <p class="mt-3">
                                             <i class="fa fa-envelope-o mr-1"></i>
