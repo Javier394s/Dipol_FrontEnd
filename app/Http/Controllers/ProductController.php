@@ -9,6 +9,16 @@ use App\Http\Auth;
 class ProductController extends Controller
 {
 
+     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['index']]);
+    }
+
     public function index2()
     {
         $data=Product::all();
