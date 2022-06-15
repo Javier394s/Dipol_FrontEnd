@@ -298,7 +298,7 @@
                             <a href="{{ url("#") }}" target="_blank">+503 6928 2674</a>
                         </p>
 
-                        <img src="{{ asset("/images/multipart.jpg") }}" class="img-fluid" alt="Logo">
+                        <img src="{{ asset("/images/sansalvador.jpg") }}" class="img-fluid" alt="Logo">
 
                     </div>
 
