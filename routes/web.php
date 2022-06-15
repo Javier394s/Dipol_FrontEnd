@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-/*Ofertas*/
+/*Ofertas que en realidad son los destacados*/
 Route::get('home-ofertas',[App\Http\Controllers\Admin\OfertasController::class, 'index'])->name('home-ofertas');
 Route::get('add-ofertas',[App\Http\Controllers\Admin\OfertasController::class, 'create'])->name('add-ofertas');
 Route::post('store-ofertas',[App\Http\Controllers\Admin\OfertasController::class, 'store'])->name('store-ofertas');
@@ -21,7 +21,7 @@ Route::get('edit-ofertas/{id}', [App\Http\Controllers\Admin\OfertasController::c
 Route::put('update-ofertas/{id}', [App\Http\Controllers\Admin\OfertasController::class, 'update'])->name('update-ofertas');
 Route::delete('delete-ofertas/{id}', [App\Http\Controllers\Admin\OfertasController::class, 'destroy'])->name('delete-ofertas');
 
-/*Destacados*/
+/*Destacados que en realidad son las ofertas*/
 Route::get('home-destacados',[App\Http\Controllers\Admin\DestacadosController::class, 'index'])->name('home-destacados');
 Route::get('add-destacados',[App\Http\Controllers\Admin\DestacadosController::class, 'create'])->name('add-destacados');
 Route::post('store-destacados',[App\Http\Controllers\Admin\DestacadosController::class, 'store'])->name('store-destacados');
