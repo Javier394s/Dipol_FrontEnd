@@ -9,8 +9,8 @@
             <div class="card">
                 <div class="card-header">
                     <h4>
-                        Ofertas
-                        <a style="margin-left: 500px" href="{{ url('add-ofertas') }}" class="btn btn-primary btn-sm float-right">Agregar Oferta</a>
+                        Destacados
+                        <a style="margin-left: 500px" href="{{ url('add-ofertas') }}" class="btn btn-primary btn-sm float-right">Agregar Destacados</a>
                     </h4>
                 </div>
                 <div class="card-body">
