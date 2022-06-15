@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-/*Ofertas que en realidad son los destacados | cambios de hugo*/
+/*Ofertas que en realidad son los destacados | cambios de */
 Route::get('home-ofertas',[App\Http\Controllers\Admin\OfertasController::class, 'index'])->name('home-ofertas');
 Route::get('add-ofertas',[App\Http\Controllers\Admin\OfertasController::class, 'create'])->name('add-ofertas');
 Route::post('store-ofertas',[App\Http\Controllers\Admin\OfertasController::class, 'store'])->name('store-ofertas');
