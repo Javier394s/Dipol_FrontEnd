@@ -28,6 +28,7 @@
                                 <th>Desde que año</th>
                                 <th>Hasta que año</th>
                                 <th>Descuento</th>
+                                <th>Fecha a eliminar</th>
                                 <th>Editar</th>
                             </tr>
                         </thead>
@@ -42,6 +43,7 @@
                                 <td>{{ $item->year_from }}</td>
                                 <td>{{ $item->year_to }}</td>
                                 <td>{{ $item->discount }}</td>
+                                <td>{{ $item->date }}</td>
                                 <td>
                                     <a href="{{ route('edit-destacados', $item->id) }}" class="btn btn-success btn-sm">Editar</a>
 

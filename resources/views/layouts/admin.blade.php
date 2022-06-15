@@ -53,11 +53,13 @@
     </div>
     </section>
 
+    
     <script src="{{ asset("/js/jquery.min.js") }}"></script>
     <script src="{{ asset("/js/bootstrap.min.js") }}"></script>
     <script src="{{ asset("/js/aos.js") }}"></script>
     <script src="{{ asset("/js/smoothscroll.js") }}"></script>
     <script src="{{ asset("/js/custom.js") }}"></script>
     <script src="{{ asset("/js/mdb.min.js") }}"></script>
+    
 </body>
 </html>

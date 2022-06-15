@@ -1,3 +1,4 @@
+
 @extends('layouts.admin')
 
 @section('content')
@@ -38,6 +39,7 @@
                             <label for="">Nombre del producto</label>
                             <input type="text" name="title" class="form-control">
                         </div>
+
                         <div class="form-group">
                             <label for="">Subir imagen</label>
                             <input type="file" name="image" class="form-control">
