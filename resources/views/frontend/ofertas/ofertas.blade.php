@@ -12,7 +12,7 @@
                 @endphp
                 <div style="display: flex; justify-content: center;
                 align-items: center;">
-                    <img class="d-block w-75" src="{{ asset('uploads/ofertas/'.$item->image) }}" alt="ofertas imagen">
+                    <img  id="carouselAnuncios" class="d-block w-75" src="{{ asset('uploads/ofertas/'.$item->image) }}" alt="ofertas imagen">
                 </div>
             </div>
             @endforeach
