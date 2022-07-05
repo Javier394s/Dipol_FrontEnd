@@ -101,6 +101,7 @@
 
     <section class="feature" id="feature">
         <div class="container">
+            <h2 class="mb-4 text-white" id="txt"> Santa Ana</h2>
             <div class="row">
 
                 <div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
@@ -142,6 +143,50 @@
 
             </div>
         </div>
+        <div class="container" style="margin-top: 80px">
+            <h2 class="mb-4 text-white" id="txt"> San Salvador</h2>
+            <div class="row">
+
+                <div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
+                    <h2 class="mb-3 text-white" data-aos="fade-up">Multipart</h2>
+
+                    <h6 class="mb-4 text-white" data-aos="fade-up">Para mayor información</h6>
+
+                    <p class="mr-4" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa fa-envelope-o mr-1"></i>
+                        <a href="{{ url("#contacttitle") }}" target="_blank">Ventasucursal@multipartsv.com</a>
+                    </p>
+
+                    <p><i class="fa fa-phone mr-1"></i>
+                        <a href="{{ url("#contacttitle") }}" target="_blank">+503 2281 0421</a>
+                    </p>
+
+                    <a href="{{ url("#contacttitle") }}" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300">Más Información De Contacto</a>
+                </div>
+
+                <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12">
+                    <div class="about-working-hours">
+                        <div>
+
+                            <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="500">Horario De Trabajo</h2>
+
+                            <strong class="d-block" data-aos="fade-up" data-aos-delay="600">Domingo : Cerrado</strong>
+
+                            <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Lunes - Viernes</strong>
+
+                            <p data-aos="fade-up" data-aos-delay="800">08:00 AM - 05:00 PM</p>
+
+                            <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Sábado</strong>
+
+                            <p data-aos="fade-up" data-aos-delay="800">08:00 AM - 12:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </section>
 
 
@@ -287,7 +332,7 @@
                         <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Información De Contacto.</h2>
                         <p class="mt-3">
                             <i class="fa fa-envelope-o mr-1"></i>
-                            <a href="{{ url("#") }}" target="_blank">ventas@multipartsv.com</a>
+                            <a href="{{ url("#") }}" target="_blank">Ventasucursal@multipartsv.com</a>
                         </p>
                         <p class="mt-3">
                             <i class="fa fa-phone mr-1"></i>

@@ -24,6 +24,9 @@
     <a href="{{ route('home-ofertas') }}" class="list-group-item list-group-item-action py-2 ripple">
                   <i class="fas fa-camera fa-fw me-3"></i><span>Destacados</span>
     </a>
+    <a href="{{ route('home-ofertas') }}" class="list-group-item list-group-item-action py-2 ripple">
+        <i class="fas fa-home fa-fw me-3"></i><span>Sucursales</span>
+    </a>
   </div>
 </div>
 </nav>

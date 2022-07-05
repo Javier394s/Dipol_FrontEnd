@@ -22,7 +22,6 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th>ID</th>
                                 <th>Imagen</th>
                                 <th>Marca - Modelo</th>
                                 <th>Desde que año</th>
@@ -35,7 +34,6 @@
                         <tbody>
                             @foreach ($destacados as $item)
                             <tr>
-                                <td>{{ $item->id }}</td>
                                 <td>
                                     <img src="{{ asset('uploads/destacados/'.$item->picture) }}" width="100px" height="50px" alt="destacados imagen">
                                 </td>
