@@ -69,27 +69,27 @@
                         </div>
                         <div class="form-group">
                             <label for="">Horario Santa Ana - Domingo</label>
-                            <input type="text" name="fijo_ss" value="{{ $config->horario_sa['domingo'] }}" class="form-control">
+                            <input type="text" name="horario_sa-domingo" value="{{ $config->horario_sa['domingo'] }}" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="">Horario Santa Ana - Lunes - Viernes</label>
-                            <input type="text" name="fijo_ss" value="{{ $config->horario_sa['lunes-viernes'] }}" class="form-control">
+                            <input type="text" name="horario_sa-lunes-viernes" value="{{ $config->horario_sa['lunes-viernes'] }}" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="">Horario Santa Ana - Sábado</label>
-                            <input type="text" name="fijo_ss" value="{{ $config->horario_sa['sabado'] }}" class="form-control">
+                            <input type="text" name="horario_sa-sabado" value="{{ $config->horario_sa['sabado'] }}" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="">Horario San Salvador - Domingo</label>
-                            <input type="text" name="fijo_ss" value="{{ $config->horario_ss['domingo'] }}" class="form-control">
+                            <input type="text" name="horario_ss-domingo" value="{{ $config->horario_ss['domingo'] }}" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="">Horario San Salvador - Lunes - Viernes</label>
-                            <input type="text" name="fijo_ss" value="{{ $config->horario_ss['lunes-viernes'] }}" class="form-control">
+                            <input type="text" name="horario_ss-lunes-viernes" value="{{ $config->horario_ss['lunes-viernes'] }}" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="">Horario San Salvador - Sábado</label>
-                            <input type="text" name="fijo_ss" value="{{ $config->horario_ss['sabado'] }}" class="form-control">
+                            <input type="text" name="horario_ss-sabado" value="{{ $config->horario_ss['sabado'] }}" class="form-control">
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary">Actualizar Información</button>
