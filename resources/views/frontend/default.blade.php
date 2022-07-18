@@ -92,6 +92,7 @@
 
                                     <h2 style="color: whitesmoke;" data-aos="fade-up" data-aos-delay="300">Venta de carrocería, luces y accesorios nuevos para vehículos</h6>
 
+                                    <h1 style="margin-top: 120px;" class="text-white" data-aos="fade-up" data-aos-delay="300">Multipart is champion</h1>
                                     <h1 style="margin-top: 220px;" class="text-white" data-aos="fade-up" data-aos-delay="500">"CALIDAD Y RAPIDEZ A BUEN PRECIO"</h1>
                                 </div>
                         </div>
@@ -111,11 +112,11 @@
 
                     <p class="mr-4" data-aos="fade-up" data-aos-delay="200">
                         <i class="fa fa-envelope-o mr-1"></i>
-                        <a href="{{ url("#contacto") }}" target="_blank">Ventas@multipartsv.com</a>
+                        <a href="{{ url("#contacto") }}" target="_blank">{{$config->correo_sa}}</a>
                     </p>
 
                     <p><i class="fa fa-phone mr-1"></i>
-                        <a href="{{ url("#contacto") }}" target="_blank">+503 2440 3772</a>
+                        <a href="{{ url("#contacto") }}" target="_blank">{{$config->fijo_sa}}</a>
                     </p>
 
                     <a href="{{ url("#contact") }}" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300">Más Información De Contacto</a>
@@ -127,15 +128,15 @@
 
                             <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="500">Horario De Trabajo</h2>
 
-                            <strong class="d-block" data-aos="fade-up" data-aos-delay="600">Domingo : Cerrado</strong>
+                            <strong class="d-block" data-aos="fade-up" data-aos-delay="600">Domingo : {{$config->horario_sa['domingo']}}</strong>
 
                             <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Lunes - Viernes</strong>
 
-                            <p data-aos="fade-up" data-aos-delay="800">08:00 AM - 05:00 PM</p>
+                            <p data-aos="fade-up" data-aos-delay="800">{{$config->horario_sa['lunes-viernes']}}</p>
 
                             <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Sábado</strong>
 
-                            <p data-aos="fade-up" data-aos-delay="800">08:00 AM - 12:00 PM</p>
+                            <p data-aos="fade-up" data-aos-delay="800">{{$config->horario_sa['sabado']}}</p>
                             </div>
                         </div>
                     </div>
@@ -154,11 +155,11 @@
 
                     <p class="mr-4" data-aos="fade-up" data-aos-delay="200">
                         <i class="fa fa-envelope-o mr-1"></i>
-                        <a href="{{ url("#contacttitle") }}" target="_blank">Ventasucursal@multipartsv.com</a>
+                        <a href="{{ url("#contacttitle") }}" target="_blank">{{$config->correo_ss}}</a>
                     </p>
 
                     <p><i class="fa fa-phone mr-1"></i>
-                        <a href="{{ url("#contacttitle") }}" target="_blank">+503 2281 0421</a>
+                        <a href="{{ url("#contacttitle") }}" target="_blank">{{$config->fijo_ss}}</a>
                     </p>
 
                     <a href="{{ url("#contacttitle") }}" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300">Más Información De Contacto</a>
@@ -170,15 +171,15 @@
 
                             <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="500">Horario De Trabajo</h2>
 
-                            <strong class="d-block" data-aos="fade-up" data-aos-delay="600">Domingo : Cerrado</strong>
+                            <strong class="d-block" data-aos="fade-up" data-aos-delay="600">Domingo : {{$config->horario_sa['domingo']}}</strong>
 
                             <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Lunes - Viernes</strong>
 
-                            <p data-aos="fade-up" data-aos-delay="800">08:00 AM - 05:00 PM</p>
+                            <p data-aos="fade-up" data-aos-delay="800">{{$config->horario_sa['lunes-viernes']}}</p>
 
                             <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Sábado</strong>
 
-                            <p data-aos="fade-up" data-aos-delay="800">08:00 AM - 12:00 PM</p>
+                            <p data-aos="fade-up" data-aos-delay="800">{{$config->horario_sa['sabado']}}</p>
                             </div>
                         </div>
                     </div>
@@ -198,26 +199,17 @@
                             <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
                                 <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Multipart S.A de C.V. Quienes somos</h2>
 
-                                <p data-aos="fade-up" data-aos-delay="400">Nosotros, quienes formamos Multipart, S.A de C.V somos
-                                    empresarios santanecos que hemos incursionado con éxito por muchos años en distintos proyectos en
-                                    diferentes empresas.</p>
+                                <p data-aos="fade-up" data-aos-delay="400">{{$config->intro}}</p>
 
-                                <p data-aos="fade-up" data-aos-delay="500">En esta ocasión estamos poniendo a disposición de la
-                                    comunidad salvadoreña de talleristas, importadores y propietarios de vehículos en general el
-                                    servicio de venta de carrocería, luces y accesorios nuevos para vehículos. La empresa nació en
-                                    febrero del 2021 e inicio sus operaciones el 23 se septiembre del mismo año. Contamos con
-                                    parqueo propio y nos puedes encontrar en Facebook como, <a rel="nofollow" href="https://www.facebook.com/profile.php?id=100072798421030" target="_blank">Multipart SA de CV.</a></p>
+                                <p data-aos="fade-up" data-aos-delay="500">{{$config->general}} <a rel="nofollow" href="https://www.facebook.com/profile.php?id=100072798421030" target="_blank">Multipart SA de CV.</a></p>
 
                             </div>
 
                             <div class="ml-lg-auto col-lg-5 col-md-6 col-12" data-aos="fade-up" data-aos-delay="700" style="margin-top: 40px;">
 
-                                <p data-aos="fade-up" data-aos-delay="400">Ponemos a tu disposición la página Web en donde puedes
-                                    encontrar una variedad de productos. Puedes consultar precios e inventario en los números de
-                                    contacto y podrás hacer compras a través de transferencias bancarias, por medio visitas a nuestra
-                                    tienda o en la comodidad de tu empresa o residencia cuando recibas tus productos a domicilio.</p>
+                                <p data-aos="fade-up" data-aos-delay="400">{{$config->info_website}}</p>
 
-                                <p data-aos="fade-up" data-aos-delay="500">Estamos ubicados en Santa Ana atrás del centro médico
+                                <p data-aos="fade-up" data-aos-delay="500">Estamos ubicados en Santa Ana en la siguiente
                                     <a rel="nofollow" href="https://www.google.com/maps/place/MultipartSV+S.A+de+C.V/@13.9823191,-89.5624378,17z/data=!4m5!3m4!1s0x8f62e90e8e1ffb41:0x9edb7b93129cb7e8!8m2!3d13.9833863!4d-89.5606675" target="_blank">
                                         (Ver en Google Maps) </a>
                                     y contamos con una sucursal en San Salvador ubicada en Colonia Layco 27 calle poniente y 21 avenida norte # 1214 San Salvador.

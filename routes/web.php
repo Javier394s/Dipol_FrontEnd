@@ -43,6 +43,8 @@ Route::get('home-products',[App\Http\Controllers\ProductController::class, 'inde
 Route::get('add-product',[App\Http\Controllers\ProductController::class, 'create'])->name('add-product');
 Route::post('store-product',[App\Http\Controllers\ProductController::class, 'store'])->name('store-product');
 
+Route::get('configuracion', [App\Http\Controllers\Admin\ConfigController::class, 'index'])->name('configuracion');
+Route::put('update-config', [App\Http\Controllers\Admin\ConfigController::class, 'update'])->name('update-config');
 
 Route::get('edit-product/{id}', [App\Http\Controllers\ProductController::class, 'edit'])->name('edit-product');
 Route::put('update-product/{id}', [App\Http\Controllers\ProductController::class, 'update'])->name('update-product');
