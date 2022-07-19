@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use App\Models\Configuracion;
 use App\Http\Auth;
 
 class ProductController extends Controller
@@ -29,7 +30,8 @@ class ProductController extends Controller
     public function index()
     {
         $data=Product::all();
-        return view('products.products', compact('data'));
+        $config = Configuracion::first();
+        return view('products.products', compact('data', 'config'));
 
     }
 

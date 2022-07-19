@@ -49,6 +49,7 @@
 
                     <li class="nav-item dropdown" style="list-style:none">
                         <a href="{{ url("#promociones") }}" class="nav-link smoothScroll">OFERTAS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown"></div>
                         <ul>
                             <li class="dropdown-item"><a class="item-text" href="{{ url("#destacados") }}">DESTACADOS</a></li>
                         </ul>
@@ -209,14 +210,13 @@
 
                                 <p data-aos="fade-up" data-aos-delay="400">{{$config->info_website}}</p>
 
-                                <p data-aos="fade-up" data-aos-delay="500">Estamos ubicados en Santa Ana en la siguiente
+                                <p data-aos="fade-up" data-aos-delay="500">{{$config->ubicacion_sa}}
                                     <a rel="nofollow" href="https://www.google.com/maps/place/MultipartSV+S.A+de+C.V/@13.9823191,-89.5624378,17z/data=!4m5!3m4!1s0x8f62e90e8e1ffb41:0x9edb7b93129cb7e8!8m2!3d13.9833863!4d-89.5606675" target="_blank">
                                         (Ver en Google Maps) </a>
-                                    y contamos con una sucursal en San Salvador ubicada en Colonia Layco 27 calle poniente y 21 avenida norte # 1214 San Salvador.
-                                    En Multipart nos caracterizamos por la comercialización de productos de excelente calidad,
-                                    elaborados con las mejores tecnologías, al mismo tiempo, contamos con un personal altamente
-                                    calificado con el propósito de satisfacer las necesidades y expectativas de nuestros clientes.
-                                Multipart es “Calidad y rapidez a buen precio”</p>
+                                    {{$config->ubicacion_ss}}
+                                    <a rel="nofollow" href="https://goo.gl/maps/hMUrNt9w4LCZSkJV9" target="_blank">
+                                        (Ver en Google Maps) </a>
+                                    {{$config->ubicaciones}}</p>
                             </div>
                     </div>
             </div>
@@ -315,7 +315,7 @@
                         <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i>Colonia Layco 27 calle poniente y 21 avenida norte # 1214 San Salvador</p>
 
                         <div class="google-map" data-aos="fade-up" data-aos-delay="900">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1935.7912090104467!2d-89.56172934210272!3d13.983443600274796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3d9b89368ad4f71d!2zMTPCsDU5JzAwLjQiTiA4OcKwMzMnMzguMyJX!5e0!3m2!1ses!2ssv!4v1649202620494!5m2!1ses!2ssv" width="1920" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.084164032726!2d-89.20340638516997!3d13.713352190372323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x64b9f392ea708004!2zMTPCsDQyJzQ4LjEiTiA4OcKwMTInMDQuNCJX!5e0!3m2!1ses!2ssv!4v1658244945544!5m2!1ses!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="1920" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                         </div>
 
                     </div>
@@ -355,7 +355,7 @@
 
                     <div class="ml-auto col-lg-4 col-md-5">
                         <p class="copyright-text">Copyright &copy; 2022</p>
-                        <p>Dev by VLS</p>
+                        <p>Multipart SA de CV</p>
                     </div>
 
                     <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
