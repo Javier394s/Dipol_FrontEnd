@@ -218,7 +218,7 @@
                                     <a rel="nofollow" href="https://www.google.com/maps/place/MultipartSV+S.A+de+C.V/@13.9823191,-89.5624378,17z/data=!4m5!3m4!1s0x8f62e90e8e1ffb41:0x9edb7b93129cb7e8!8m2!3d13.9833863!4d-89.5606675" target="_blank">
                                         (Ver en Google Maps) </a>
                                     {{$config->ubicacion_ss}}
-                                    <a rel="nofollow" href="https://goo.gl/maps/hMUrNt9w4LCZSkJV9" target="_blank">
+                                    <a rel="nofollow" href="https://goo.gl/maps/isFwUHBHLLSA11hW7" target="_blank">
                                         (Ver en Google Maps) </a>
                                     {{$config->ubicaciones}}</p>
                             </div>
