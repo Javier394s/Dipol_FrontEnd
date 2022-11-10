@@ -36,10 +36,6 @@
                             <textarea name="info_website" class="form-control">{{ $config->info_website }}</textarea>
                         </div>
                         <div class="form-group">
-                            <label for="">Información General</label>
-                            <textarea name="general" class="form-control">{{ $config->general }}</textarea>
-                        </div>
-                        <div class="form-group">
                             <label for="">Ubicaciones</label>
                             <textarea name="ubicaciones" class="form-control">{{ $config->ubicaciones }}</textarea>
                         </div>

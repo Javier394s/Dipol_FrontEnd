@@ -48,11 +48,15 @@
                     </li>
 
                     <li class="nav-item dropdown" style="list-style:none">
-                        <a href="{{ url("#promociones") }}" class="nav-link smoothScroll">OFERTAS</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown"></div>
+                        <a href="{{ url("#promociones") }}" class="nav-link smoothScroll" id="navbarDropdown1">OFERTAS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1"></div>
                         <ul>
                             <li class="dropdown-item"><a class="item-text" href="{{ url("#destacados") }}">DESTACADOS</a></li>
                         </ul>
+                    </li>
+
+                    <li class="nav-item" style="list-style:none">
+                        <a>⠀</a>
                     </li>
 
                     <li class="nav-item dropdown" style="list-style:none">
@@ -72,7 +76,7 @@
                 <ul class="social-icon ml-lg-3">
                     <li><a href="https://www.facebook.com/profile.php?id=100072798421030" class="fa fa-facebook" target="_blank"></a></li>
 
-                    <li><a href="https://api.whatsapp.com/send?phone=+503 7783 9827" class="fa fa-whatsapp" target="_blank"></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=50377839827" class="fa fa-whatsapp" target="_blank"></a></li>
 
                 </ul>
             </div>
@@ -312,10 +316,10 @@
                     <div class="ml-auto col-lg-5 col-md-6 col-12">
                         <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Donde nos puedes <span>encontrar</span></h2>
 
-                        <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i>Colonia Layco 27 calle poniente y 21 avenida norte # 1214 San Salvador</p>
+                        <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i>29 Calle poniente entre 15 y 17 Avenida Norte # 935 Colonia Layco San Salvador </p>
 
                         <div class="google-map" data-aos="fade-up" data-aos-delay="900">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.084164032726!2d-89.20340638516997!3d13.713352190372323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x64b9f392ea708004!2zMTPCsDQyJzQ4LjEiTiA4OcKwMTInMDQuNCJX!5e0!3m2!1ses!2ssv!4v1658244945544!5m2!1ses!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="1920" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.0749704885206!2d-89.20028588516992!3d13.713909090372008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x66851795856608c2!2zMTPCsDQyJzUwLjEiTiA4OcKwMTEnNTMuMiJX!5e0!3m2!1ses!2ssv!4v1668046099660!5m2!1ses!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="1920" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                         </div>
 
                     </div>
