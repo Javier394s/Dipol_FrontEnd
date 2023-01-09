@@ -107,15 +107,15 @@ aria-label="Toggle navigation">
                                         <p class="mt-3">Año(s): {{$product['years']}}</p>
                                         <p class="mt-3">
                                             <i class="fa fa-envelope-o mr-1"></i>
-                                            <a href="#" target="_blank">Ventas@multipartsv.com</a>
-                                        </p>
-                                        <p class="mt-3">
-                                            <i class="fa fa-phone mr-1"></i>
-                                            <a href="#" target="_blank">+503 2440 3772</a>
+                                            <a href="#" target="_blank">{{$config->correo_sa}}</a>
                                         </p>
                                         <p class="mt-3">
                                             <i class="fa fa-whatsapp mr-1"></i>
-                                            <a href="#" target="_blank">+503 7783 9827</a>
+                                            <a href="#" target="_blank">{{$config->wa_sa}}</a>
+                                        </p>
+                                        <p class="mt-3">
+                                            <i class="fa fa-whatsapp mr-1"></i>
+                                            <a href="#" target="_blank">{{$config->wa_ss}}</a>
                                         </p>
                                     </div>
                                 </div>

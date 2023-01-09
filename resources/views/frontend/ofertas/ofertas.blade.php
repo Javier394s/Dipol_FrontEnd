@@ -11,8 +11,8 @@
                     $i++;
                 @endphp
                 <div style="display: flex; justify-content: center;
-                align-items: center;">
-                    <img  id="carouselAnuncios" class="d-block w-75" src="{{ asset('uploads/ofertas/'.$item->image) }}" alt="ofertas imagen">
+                align-items: center; ">
+                    <img  id="carouselAnuncios" class="d-block w-75 h-50" src="{{ asset('uploads/ofertas/'.$item->image) }}" alt="ofertas imagen">
                 </div>
             </div>
             @endforeach
