@@ -323,7 +323,7 @@
                         <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i>Colonia Layco 27 calle poniente y 21 avenida norte # 1214 San Salvador</p>
 
                         <div class="google-map" data-aos="fade-up" data-aos-delay="900">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1935.7912090104467!2d-89.56172934210272!3d13.983443600274796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3d9b89368ad4f71d!2zMTPCsDU5JzAwLjQiTiA4OcKwMzMnMzguMyJX!5e0!3m2!1ses!2ssv!4v1649202620494!5m2!1ses!2ssv" width="1920" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.0799278563522!2d-89.20303378255615!3d13.7136088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6331c685b7a32b%3A0xc9bcd18928ff2721!2sMultipartSV%20San%20Salvador%20S.A%20de%20C.V!5e0!3m2!1ses!2ssv!4v1657302820113!5m2!1ses!2ssv" width="1920" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                         </div>
 
                     </div>
