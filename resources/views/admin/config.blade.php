@@ -44,7 +44,7 @@
                             <input type="text" name="correo_sa" value="{{ $config->correo_sa }}" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="">Correo Santa Ana</label>
+                            <label for="">Correo San Salvador</label>
                             <input type="text" name="correo_ss" value="{{ $config->correo_ss }}" class="form-control">
                         </div>
                         <div class="form-group">
