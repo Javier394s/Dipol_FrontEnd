@@ -9,6 +9,15 @@ use Illuminate\Support\Facades\File;
 
 class DestacadosController extends Controller
 {
+     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         $destacados = Destacados::all();
@@ -28,6 +37,8 @@ class DestacadosController extends Controller
         $destacados->year_from = $request->input('year_from');
         $destacados->year_to = $request->input('year_to');
         $destacados->discount = $request->input('discount');
+        $newDate = date("m-d-y, H:i:s", strtotime($request->input('date')));
+        $destacados->date = $newDate;
         if($request->hasfile('picture'))
         {
             $file = $request->file('picture');
@@ -53,6 +64,8 @@ class DestacadosController extends Controller
         $destacados->company_model = $request->input('company_model');
         $destacados->year_from = $request->input('year_from');
         $destacados->year_to = $request->input('year_to');
+        $newDate = date("m-d-y, H:i:s", strtotime($request->input('date')));
+        $destacados->date = $newDate;
         $destacados->discount = $request->input('discount');
         if($request->hasfile('picture'))
         {

@@ -9,6 +9,15 @@ use Illuminate\Support\Facades\File;
 
 class SliderController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         $slider = Slider::all();
@@ -71,10 +80,17 @@ class SliderController extends Controller
         return redirect()->back()->with('status','Slider actualizado correctamente');
     }
 
-    public function delete($id){
+    public function destroy($id)
+    {
         $items= Slider::findOrFail($id);
-        $items->delete();
-        return view('admin.slider.index');
-    }
 
+        $destination = 'uploads/slider/'.$items->picture;
+        if(File::exists($destination)){
+            File::delete($destination);
+        }
+
+        $items->delete();
+
+        return redirect()->route('home-slide')->with('status','Slide eliminado correctamente');
+    }
 }

@@ -48,9 +48,9 @@ aria-label="Toggle navigation">
 </li>
 
 <li class="nav-item dropdown" style="list-style:none">
-<a href="{{ url("/#promociones") }}" class="nav-link smoothScroll">DESTACADOS</a>
+<a href="{{ url("/#promociones") }}" class="nav-link smoothScroll">OFERTAS</a>
 <ul>
-<li class="dropdown-item"><a class="item-text" href="{{ url("#promociones") }}">OFERTAS</a></li>
+<li class="dropdown-item"><a class="item-text" href="{{ url("/#destacados") }}">DESTACADOS</a></li>
 </ul>
 </li>
 
@@ -98,24 +98,24 @@ aria-label="Toggle navigation">
 
 <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
                                 <div class="class-thumb">
-                                <img src="{{ asset("/images/class/bumper_frontal.jpg") }}" class="img-fluid" alt="Class">
+                                <img id="cardsProducts" src="{{ asset('uploads/products/'.$product->image) }}"  class="img-fluid" alt="product imagen">
 
                                     <div class="class-info">
                                         <h3 class="mb-1">{{$product['title']}}</h3>
-
-                                        <p class="mt-3">{{$product['model']}}</p>
+                                        <p class="mt-3">{{$product['brand']}} - {{$product['model']}}</p>
+                                        
                                         <p class="mt-3">Año(s): {{$product['years']}}</p>
                                         <p class="mt-3">
                                             <i class="fa fa-envelope-o mr-1"></i>
-                                            <a href="#" target="_blank">Ventas@multipartsv.com</a>
-                                        </p>
-                                        <p class="mt-3">
-                                            <i class="fa fa-phone mr-1"></i>
-                                            <a href="#" target="_blank">+503 2440 3772</a>
+                                            <a href="#" target="_blank">{{$config->correo_sa}}</a>
                                         </p>
                                         <p class="mt-3">
                                             <i class="fa fa-whatsapp mr-1"></i>
-                                            <a href="#" target="_blank">+503 7783 9827</a>
+                                            <a href="#" target="_blank">{{$config->wa_sa}}</a>
+                                        </p>
+                                        <p class="mt-3">
+                                            <i class="fa fa-whatsapp mr-1"></i>
+                                            <a href="#" target="_blank">{{$config->wa_ss}}</a>
                                         </p>
                                     </div>
                                 </div>

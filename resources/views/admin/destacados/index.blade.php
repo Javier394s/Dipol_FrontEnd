@@ -12,8 +12,8 @@
             <div class="card">
                 <div class="card-header">
                     <h4>
-                        Destacados
-                        <a style="margin-left: 500px" href="{{ route('add-destacados') }}" class="btn btn-primary btn-sm float-right">Agregar Destacados</a>
+                        Ofertas
+                        <a style="margin-left: 700px" href="{{ route('add-destacados') }}" class="btn btn-primary btn-sm float-right">Agregar Ofertas</a>
                     </h4>
                 </div>
                 <div class="card-body">
@@ -22,19 +22,18 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th>ID</th>
                                 <th>Imagen</th>
                                 <th>Marca - Modelo</th>
                                 <th>Desde que año</th>
                                 <th>Hasta que año</th>
                                 <th>Descuento</th>
+                                <th>Fecha a eliminar</th>
                                 <th>Editar</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($destacados as $item)
                             <tr>
-                                <td>{{ $item->id }}</td>
                                 <td>
                                     <img src="{{ asset('uploads/destacados/'.$item->picture) }}" width="100px" height="50px" alt="destacados imagen">
                                 </td>
@@ -42,13 +41,14 @@
                                 <td>{{ $item->year_from }}</td>
                                 <td>{{ $item->year_to }}</td>
                                 <td>{{ $item->discount }}</td>
+                                <td>{{ $item->date }}</td>
                                 <td>
                                     <a href="{{ route('edit-destacados', $item->id) }}" class="btn btn-success btn-sm">Editar</a>
 
                                     {{-- <a id="{{ $item->id }}" onclick="document.getElementById('id01').style.display='block'" href="#" class="btn btn-danger btn-sm">Delete</a> --}}
                                     <button type="button" id="{{ $item->id }}" onclick="action(this.id)" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal">
                                         Eliminar
-                                      </button>
+                                    </button>
                                 </td>
                             </tr>
                             @endforeach
@@ -72,7 +72,7 @@
         <div class="modal-footer">
             <button type="button" class="btn btn-muted" data-dismiss="modal">Cancelar</button>
             <form method="post" id="deleteForm" action="">
-                @csrf 
+                @csrf
                 @method('delete')
                 <button type="submit" class="btn btn-danger">Eliminar</button>
             </form>

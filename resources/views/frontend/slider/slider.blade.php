@@ -6,11 +6,14 @@
         @php $i = 1; @endphp
         @foreach ($slider as $slideritem)
 
-        <div class="carousel-item {{ $i == '1' ? 'active':'' }}">
+        <div class="carousel-item {{ $i == '1' ? 'active':'' }}" >
             @php
                 $i++;
             @endphp
-            <img id="carouselAnuncios" class="d-block w-100" src="{{ asset('uploads/slider/'.$slideritem->image) }}" alt="slide imagen">
+            <div style="display: flex; justify-content: center;
+            align-items: center;">
+                <img  id="carouselAnuncios"  class="d-block w-75 h-50" src="{{ asset('uploads/slider/'.$slideritem->image) }}" alt="slide imagen">
+            </div>
         </div>
         @endforeach
     </div>
@@ -25,32 +28,3 @@
 
 </div>
 </section>
-
-<!-- ANUNCIOS
-<section class="contact section" id="anuncios">
-    <div class="container">
-        <h2 class="mb-4" id="txt"> ANUNCIOS </h2>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" data-interval="6000">
-                <div class="carousel-item active">
-                    <img id="carouselAnuncios" class="d-block w-100" src="{{ asset("/images/anuncios/anun10Mayo.jpg") }}" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img id="carouselAnuncios" class="d-block w-100" src="{{ asset("/images/anuncios/anunProd.jpg") }}" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img id="carouselAnuncios" class="d-block w-100" src="{{ asset("/images/anuncios/anunExample.jpg") }}" alt="Third slide">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="{{ url("#carouselExampleControls") }}" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="{{ url("#carouselExampleControls") }}" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-            </div>
-    </div>
-</section>
--->
