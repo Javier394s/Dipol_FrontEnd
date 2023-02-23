@@ -50,7 +50,11 @@ Route::get('edit-product/{id}', [App\Http\Controllers\ProductController::class, 
 Route::put('update-product/{id}', [App\Http\Controllers\ProductController::class, 'update'])->name('update-product');
 Route::delete('delete-product/{id}', [App\Http\Controllers\ProductController::class, 'destroy'])->name('delete-product');
 
+//Datos editables
+Route::get('home-datos', [App\Http\Controllers\Admin\DatoController::class, 'index'])->name('home-datos');
+Route::get('add-datos', [App\Http\Controllers\Admin\DatoController::class, 'create'])->name('add-datos');
 
+//pagina cliente
 Route::get('/', [App\Http\Controllers\Frontend\FrontendController::class, 'index'])->name('default');
 
 Route::get('/marcas', function () {

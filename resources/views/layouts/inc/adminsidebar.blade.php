@@ -14,18 +14,19 @@
       <i class="fas fa-calendar fa-fw me-3"></i
       ><span>Slides Anuncios</span>
   </a>
-  <a
-    href="{{ url('home-products') }}"
-    class="list-group-item list-group-item-action py-2 ripple"
-    ><i class="fas fa-folder fa-fw me-3"></i><span>Productos</span></a>
+    <a
+        href="{{ url('home-products') }}"
+        class="list-group-item list-group-item-action py-2 ripple">
+        <i class="fas fa-folder fa-fw me-3"></i><span>Productos</span>
+    </a>
     <a href="{{ route('home-destacados') }}" class="list-group-item list-group-item-action py-2 ripple">
                   <i class="fas fa-star fa-fw me-3"></i><span>Ofertas</span>
     </a>
-    <a href="{{ route('home-ofertas') }}" class="list-group-item list-group-item-action py-2 ripple">
+    {{--<a href="{{ route('home-ofertas') }}" class="list-group-item list-group-item-action py-2 ripple">
                   <i class="fas fa-camera fa-fw me-3"></i><span>Destacados</span>
-    </a>
-    <a href="{{ route('configuracion') }}" class="list-group-item list-group-item-action py-2 ripple">
-        <i class="fas fa-home fa-fw me-3"></i><span>Configuracion</span>
+    </a>--}}
+    <a href="{{ route('home-datos') }}" class="list-group-item list-group-item-action py-2 ripple">
+        <i class="fas fa-home fa-fw me-3"></i><span>Datos</span>
     </a>
   </div>
 </div>

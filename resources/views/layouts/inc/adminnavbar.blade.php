@@ -25,7 +25,7 @@
             <div class="container">
                 <a class="navbar-brand" href="{{route('home')}}">
                     <img
-                        src="{{ asset('images/log-azul-pnggg2.png')}}"
+                        src="{{ asset('images/logodipol.png')}}"
                         height="55"
                         alt="logo"
                         loading="lazy"

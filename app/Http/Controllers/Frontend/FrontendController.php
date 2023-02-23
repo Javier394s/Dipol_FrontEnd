@@ -8,6 +8,7 @@ use App\Models\Destacados;
 use App\Models\Slider;
 use App\Models\Ofertas;
 use App\Models\Configuracion;
+use App\Models\Dato;
 
 class FrontendController extends Controller
 {
@@ -17,6 +18,7 @@ class FrontendController extends Controller
         $ofertas = Ofertas::where('status','0')->get();
         $destacados = Destacados::all();
         $config = Configuracion::first();
-        return view('frontend.default', compact('slider', 'destacados', 'ofertas', 'config'));
+        $datos = Dato::first();
+        return view('frontend.default', compact('slider', 'destacados', 'ofertas', 'config', 'datos'));
     }
 }
