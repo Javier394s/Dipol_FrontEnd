@@ -18,7 +18,7 @@ class FrontendController extends Controller
         $ofertas = Ofertas::where('status','0')->get();
         $destacados = Destacados::all();
         $config = Configuracion::first();
-        $datos = Dato::first();
-        return view('frontend.default', compact('slider', 'destacados', 'ofertas', 'config', 'datos'));
+        $dato = Dato::all();
+        return view('frontend.default', compact('slider', 'destacados', 'ofertas', 'config', 'dato'));
     }
 }
