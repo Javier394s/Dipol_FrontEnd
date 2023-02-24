@@ -9,8 +9,8 @@
             <div class="card">
                 <div class="card-header">
                     <h4>
-                        Sliders
-                        <a style="margin-left: 500px" href="{{ url('add-slide') }}" class="btn btn-primary btn-sm float-right">Agregar Slider</a>
+                        Anuncios
+                        <a style="margin-left: 500px" href="{{ url('add-slide') }}" class="btn btn-primary btn-sm float-right">Agregar Anuncio</a>
                     </h4>
                 </div>
                 <div class="card-body">

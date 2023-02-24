@@ -60,7 +60,8 @@
                         <a href="{{ url("#contact") }}" class="nav-link smoothScroll" id="navbarDropdown">CONTACTO</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown"></div>
                         <ul>
-                            <li class="dropdown-item"><a class="item-text" href="{{ url("#contact") }}">SANTA ANA</a></li>
+                            <li class="dropdown-item"><a class="item-text" href="{{ url("#contact") }}">CASA MATRIZ</a></li>
+                            <li class="dropdown-item"><a class="item-text" href="{{ url("#contact2") }}">SANTA ANA</a></li>
                             <li class="dropdown-item"><a class="item-text" href="{{ url("#contacttitle") }}">SAN SALVADOR</a></li>
                         </ul>
                     </li>
@@ -104,22 +105,22 @@
 
     <section class="feature" id="feature">
         @foreach ($dato as $datos)
-        <div class="container">
+        <div class="container" >
             <h2 class="mb-4 text-white" id="txt"> Santa Ana</h2>
             <div class="row">
 
                 <div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
-                    <h2 class="mb-3 text-white" data-aos="fade-up">Dipol</h2>
+                    <h2 class="mb-3 text-white" data-aos="fade-up">Dipol Casa Matríz </h2>
 
                     <h6 class="mb-4 text-white" data-aos="fade-up">Para mayor información</h6>
 
                     <p class="mr-4" data-aos="fade-up" data-aos-delay="200">
                         <i class="fa fa-envelope-o mr-1"></i>
-                        <a href="{{ url("#contacto") }}" target="_blank">saladeventasucursal2@dipolsa.com</a>
+                        <a href="{{ url("#contacto") }}" target="_blank">saladeventacasamatriz@dipolsa.com</a>
                     </p>
 
                     <p><i class="fa fa-phone mr-1"></i>
-                        <a href="{{ url("#contacto") }}" target="_blank">{{$datos->fijo_sa}}</a>
+                        <a href="{{ url("#contacto") }}" target="_blank">{{$datos->fijo_matriz}}</a>
                     </p>
 
                     <a href="{{ url("#contact") }}" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300">Más Información De Contacto</a>
@@ -131,15 +132,15 @@
 
                             <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="500">Horario De Trabajo</h2>
 
-                            <strong class="d-block" data-aos="fade-up" data-aos-delay="600">Domingo : {{$datos->horario_sa_domingo}}</strong>
+                            <strong class="d-block" data-aos="fade-up" data-aos-delay="600">Domingo : {{$datos->horario_matriz_domingo}}</strong>
 
                             <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Lunes - Viernes</strong>
 
-                            <p data-aos="fade-up" data-aos-delay="800">{{$datos->horario_sa_semana}}</p>
+                            <p data-aos="fade-up" data-aos-delay="800">{{$datos->horario_matriz_semana}}</p>
 
                             <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Sábado</strong>
 
-                            <p data-aos="fade-up" data-aos-delay="800">{{$datos->horario_sa_sabado}}</p>
+                            <p data-aos="fade-up" data-aos-delay="800">{{$datos->horario_matriz_sabado}}</p>
                             </div>
                         </div>
                     </div>
@@ -152,7 +153,7 @@
             <div class="row">
 
                 <div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
-                    <h2 class="mb-3 text-white" data-aos="fade-up">Dipol</h2>
+                    <h2 class="mb-3 text-white" data-aos="fade-up">Dipol Sucursal 1</h2>
 
                     <h6 class="mb-4 text-white" data-aos="fade-up">Para mayor información</h6>
 
@@ -190,12 +191,54 @@
 
             </div>
         </div>
+        <div class="container" style="margin-top: 80px">
+            <h2 class="mb-4 text-white" id="txt"> Santa Ana</h2>
+            <div class="row">
+                <div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
+                    <h2 class="mb-3 text-white" data-aos="fade-up">Dipol Sucursal 2 </h2>
+
+                    <h6 class="mb-4 text-white" data-aos="fade-up">Para mayor información</h6>
+
+                    <p class="mr-4" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa fa-envelope-o mr-1"></i>
+                        <a href="{{ url("#contacto") }}" target="_blank">saladeventasucursal2@dipolsa.com</a>
+                    </p>
+
+                    <p><i class="fa fa-phone mr-1"></i>
+                        <a href="{{ url("#contacto") }}" target="_blank">{{$datos->fijo_sa}}</a>
+                    </p>
+
+                    <a href="{{ url("#contact") }}" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300">Más Información De Contacto</a>
+                </div>
+
+                <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12">
+                    <div class="about-working-hours">
+                        <div>
+
+                            <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="500">Horario De Trabajo</h2>
+
+                            <strong class="d-block" data-aos="fade-up" data-aos-delay="600">Domingo : {{$datos->horario_sa_domingo}}</strong>
+
+                            <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Lunes - Viernes</strong>
+
+                            <p data-aos="fade-up" data-aos-delay="800">{{$datos->horario_sa_semana}}</p>
+
+                            <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Sábado</strong>
+
+                            <p data-aos="fade-up" data-aos-delay="800">{{$datos->horario_sa_sabado}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         @endforeach
     </section>
 
 
     <!-- ACERDA DE NOSOTROS -->
-    <section class="about section" id="about">
+    <section class="about section" id="about" style="text-align: justify">
         @foreach ($dato as $datos)
             <div class="container">
                     <div class="row">
@@ -245,21 +288,18 @@
                                         <div class="class-info">
                                             <h3 class="mb-1">{{ $item->name }}</h3>
 
-                                           {{--REVISAR EL PORCENTAJE Y SI ESTA VACIO--}} <span class="class-price">-%{{ $item->discount }}</span>
-
-                                            <p class="mt-3">{{ $item->company_model }}</p>
-                                            <p class="mt-3">Año {{ $item->year_from }} - {{ $item->year_to }}</p>
+                                            {{--REVISAR EL PORCENTAJE Y SI ESTA VACIO--}} <span class="class-price">-%{{ $item->discount }}</span>
                                             <p class="mt-3">
                                                 <i class="fa fa-envelope-o mr-1"></i>
-                                                <a href="#">Ventas@multipartsv.com</a>
+                                                <a href="#">saladeventacasamatriz@dipolsa.com</a>
                                             </p>
                                             <p class="mt-3">
                                                 <i class="fa fa-phone mr-1"></i>
-                                                <a href="#">+503 2440 3772</a>
+                                                <a href="#">+503 2448-1953</a>
                                             </p>
                                             <p class="mt-3">
                                                 <i class="fa fa-whatsapp mr-1"></i>
-                                                <a href="#">+503 7783 9827</a>
+                                                <a href="#">+503 7837-6752</a>
                                             </p>
                                         </div>
                                     </div>
@@ -278,6 +318,76 @@
     <!-- CONTACT -->
     <section class="contact section" id="contact">
         @foreach ($dato as $datos)
+        <div class="container">
+            <h2 class="mb-4" id="txt"> CASA MATRÍZ</h2>
+            <div class="row">
+                    <div class="ml-auto col-lg-5 col-md-6 col-12">
+                        <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Información De Contacto.</h2>
+                        <p class="mt-3">
+                            <i class="fa fa-envelope-o mr-1"></i>
+                            <a href="{{ url("#") }}" target="_blank">saladeventacasamatriz@dipolsa.com</a>
+                        </p>
+                        <p class="mt-3">
+                            <i class="fa fa-phone mr-1"></i>
+                            <a href="{{ url("#") }}" target="_blank">{{$datos->fijo_matriz}}</a>
+                        </p>
+                        <p class="mt-3">
+                            <i class="fa fa-whatsapp mr-1"></i>
+                            <a href="{{ url("#") }}" target="_blank">{{$datos->wa_matriz}}</a>
+                        </p>
+
+                        <img src="{{ asset("/images/dipolmatriz.jpg") }}" class="img-fluid" alt="Logo">
+
+                    </div>
+
+                    <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
+                        <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Donde nos puedes <span>encontrar</span></h2>
+
+                        <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i> 6º avenida sur y 5 calle poniente esquina No. 18 </p>
+
+                        <div class="google-map" data-aos="fade-up" data-aos-delay="900">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d967.8555332141551!2d-89.5600405!3d13.992966!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e8bad3d4a413%3A0x9f6b794cac3bbefe!2sDipol%2C%20S.A.%20de%20C.V.%20Casa%20Matriz!5e0!3m2!1ses!2ssv!4v1677279548321!5m2!1ses!2ssv" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacttitle" class="contact section">
+        <div class="container">
+            <h2 class="mb-4" id="txt"> San Salvador</h2>
+            <div class="row">
+                    <div class="ml-auto col-lg-5 col-md-6 col-12">
+                        <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Donde nos puedes <span>encontrar</span></h2>
+
+                        <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i>Calle Concepción y 10 Avenida Norte No. 115, Contiguo a TICA BUS</p>
+
+                        <div class="google-map" data-aos="fade-up" data-aos-delay="900">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d778.540415992494!2d-89.1867565!3d13.7003641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63318709d9b429%3A0x6ebade7368b54103!2sDipol%2C%20S.A.%20de%20C.V.%20Sucursal%201%20San%20Salvador!5e1!3m2!1ses!2ssv!4v1677273475060!5m2!1ses!2ssv" width="600" height="330" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
+                        <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Información De Contacto.</h2>
+                        <p class="mt-3">
+                            <i class="fa fa-envelope-o mr-1"></i>
+                            <a href="{{ url("#") }}" target="_blank">saladeventasansalvador@dipolsa.com</a>
+                        </p>
+                        <p class="mt-3">
+                            <i class="fa fa-phone mr-1"></i>
+                            <a href="{{ url("#") }}" target="_blank">{{$datos->fijo_ss}}</a>
+                        </p>
+                        <p class="mt-3">
+                            <i class="fa fa-whatsapp mr-1"></i>
+                            <a href="{{ url("#") }}" target="_blank">{{$datos->wa_ss}}</a>
+                        </p>
+
+                        <img src="{{ asset("/images/dipolmatriz.jpg") }}" class="img-fluid" alt="Logo">
+
+                    </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="contact section" id="contact2">
         <div class="container">
             <h2 class="mb-4" id="txt"> SANTA ANA</h2>
             <div class="row">
@@ -309,43 +419,6 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1368.7763355132204!2d-89.55239453265463!3d13.989284444488803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f633175db32b88b%3A0x2e562c52477d51bc!2sDipol%2C%20S.A.%20de%20C.V%20Sucursal%20No.%202%20Santa%20Ana!5e0!3m2!1ses!2ssv!4v1677273394751!5m2!1ses!2ssv" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-            </div>
-        </div>
-    </section>
-    <section id="contacttitle" class="contact section">
-        <div class="container">
-            <h2 class="mb-4" id="txt"> San Salvador</h2>
-            <div class="row">
-                    <div class="ml-auto col-lg-5 col-md-6 col-12">
-                        <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Donde nos puedes <span>encontrar</span></h2>
-
-                        <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i>Calle Concepción y 10 Avenida Norte No. 115, Contiguo a TICA BUS</p>
-
-                        <div class="google-map" data-aos="fade-up" data-aos-delay="900">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d778.540415992494!2d-89.1867565!3d13.7003641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63318709d9b429%3A0x6ebade7368b54103!2sDipol%2C%20S.A.%20de%20C.V.%20Sucursal%201%20San%20Salvador!5e1!3m2!1ses!2ssv!4v1677273475060!5m2!1ses!2ssv" width="600" height="330" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-
-                    </div>
-
-                    <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
-                        <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Información De Contacto.</h2>
-                        <p class="mt-3">
-                            <i class="fa fa-envelope-o mr-1"></i>
-                            <a href="{{ url("#") }}" target="_blank">saladeventasansalvador@dipolsa.com</a>
-                        </p>
-                        <p class="mt-3">
-                            <i class="fa fa-phone mr-1"></i>
-                            <a href="{{ url("#") }}" target="_blank">{{$datos->fijo_ss}}</a>
-                        </p>
-                        <p class="mt-3">
-                            <i class="fa fa-whatsapp mr-1"></i>
-                            <a href="{{ url("#") }}" target="_blank">{{$datos->wa_ss}}</a>
-                        </p>
-
-                        <img src="{{ asset("/images/dipolmatriz.jpg") }}" class="img-fluid" alt="Logo">
-
-                    </div>
-
             </div>
         </div>
         @endforeach

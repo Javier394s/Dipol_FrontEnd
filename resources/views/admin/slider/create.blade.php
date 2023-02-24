@@ -13,7 +13,7 @@
             <div class="card">
                 <div class="card-header">
                     <h4>
-                        Agregar Slider
+                        Agregar Anuncio
                         <a style="margin-left: 500px" href="{{ url('home-slide') }}" class="btn btn-danger btn-sm float-right">REGRESAR</a>
                     </h4>
                 </div>

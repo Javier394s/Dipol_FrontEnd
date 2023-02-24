@@ -23,11 +23,7 @@
                         <thead>
                             <tr>
                                 <th>Imagen</th>
-                                <th>Marca - Modelo</th>
-                                <th>Desde que año</th>
-                                <th>Hasta que año</th>
                                 <th>Descuento</th>
-                                <th>Fecha a eliminar</th>
                                 <th>Editar</th>
                             </tr>
                         </thead>
@@ -37,11 +33,7 @@
                                 <td>
                                     <img src="{{ asset('uploads/destacados/'.$item->picture) }}" width="100px" height="50px" alt="destacados imagen">
                                 </td>
-                                <td>{{ $item->company_model }}</td>
-                                <td>{{ $item->year_from }}</td>
-                                <td>{{ $item->year_to }}</td>
                                 <td>{{ $item->discount }}</td>
-                                <td>{{ $item->date }}</td>
                                 <td>
                                     <a href="{{ route('edit-destacados', $item->id) }}" class="btn btn-success btn-sm">Editar</a>
 
