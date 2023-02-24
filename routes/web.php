@@ -53,6 +53,7 @@ Route::delete('delete-product/{id}', [App\Http\Controllers\ProductController::cl
 //Datos editables
 Route::get('home-datos', [App\Http\Controllers\Admin\DatoController::class, 'index'])->name('home-datos');
 Route::get('add-datos', [App\Http\Controllers\Admin\DatoController::class, 'create'])->name('add-datos');
+Route::post('store-datos',[App\Http\Controllers\Admin\DatoController::class, 'store'])->name('store-datos');
 
 //pagina cliente
 Route::get('/', [App\Http\Controllers\Frontend\FrontendController::class, 'index'])->name('default');

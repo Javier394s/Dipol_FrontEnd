@@ -94,7 +94,7 @@
                             <label for="">Horario San Salvador Domingo</label>
                             <input type="text" name="horario_ss_domingo" class="form-control">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="margin-top: 10px">
                             <button type="submit" class="btn btn-primary">Agregar</button>
                         </div>
                     </form>
