@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('datos', function (Blueprint $table) {
-            $table->id();
+            $table->id('id');
             $table->mediumText('intro');
             $table->mediumText('general');
             $table->mediumText('info_website');

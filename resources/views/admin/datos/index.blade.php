@@ -26,10 +26,11 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                {{--@foreach ($dato as $item)
+                                @foreach ($dato as $item)
                                 <tr>
                                     <td>{{ $item->id }}</td>
-                                    <td>{{ $item->intro }}</td>
+                                    <td>Matriz, Santa Ana y San Salvador</td>
+                                    {{--<td>{{ $item->intro }}</td>
                                     <td>{{ $item->general }}</td>
                                     <td>{{ $item->info_website }}
                                     <td>{{ $item->wa_matriz }}</td>
@@ -40,13 +41,13 @@
                                     <td>{{ $item->fijo_ss }}</td>
                                     <td>{{ $item->horario_matriz }}</td>
                                     <td>{{ $item->horario_sa }}</td>
-                                    <td>{{ $item->horario_ss }}
+                                    <td>{{ $item->horario_ss }}--}}
                                     <td>
                                         <a href="{{ url('edit-datos/'.$item->id) }}" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a>
                                     </td>
                                 </tr>
 
-                                @endforeach--}}
+                                @endforeach
                             </tbody>
                         </table>
                     </div>

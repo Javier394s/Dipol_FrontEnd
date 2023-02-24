@@ -54,6 +54,8 @@ Route::delete('delete-product/{id}', [App\Http\Controllers\ProductController::cl
 Route::get('home-datos', [App\Http\Controllers\Admin\DatoController::class, 'index'])->name('home-datos');
 Route::get('add-datos', [App\Http\Controllers\Admin\DatoController::class, 'create'])->name('add-datos');
 Route::post('store-datos',[App\Http\Controllers\Admin\DatoController::class, 'store'])->name('store-datos');
+Route::get('edit-datos/{id}', [App\Http\Controllers\Admin\DatoController::class, 'edit'])->name('edit-datos');
+Route::put('update-datos/{id}', [App\Http\Controllers\Admin\DatoController::class, 'update'])->name('update-datos');
 
 //pagina cliente
 Route::get('/', [App\Http\Controllers\Frontend\FrontendController::class, 'index'])->name('default');
