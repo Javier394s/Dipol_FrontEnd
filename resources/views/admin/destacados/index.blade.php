@@ -13,7 +13,7 @@
                 <div class="card-header">
                     <h4>
                         Ofertas
-                        <a style="margin-left: 700px" href="{{ route('add-destacados') }}" class="btn btn-primary btn-sm float-right">Agregar Ofertas</a>
+                        <a style="margin-left: 500px" href="{{ route('add-destacados') }}" class="btn btn-primary btn-sm float-right">Agregar Ofertas</a>
                     </h4>
                 </div>
                 <div class="card-body">
@@ -22,24 +22,26 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
+                                <th>ID</th>
+                                <th>Titulo</th>
                                 <th>Imagen</th>
-                                <th>Descuento</th>
                                 <th>Editar</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($destacados as $item)
                             <tr>
+                                <td>{{ $item->id }}</td>
+                                <td>{{ $item->name }}</td>
                                 <td>
                                     <img src="{{ asset('uploads/destacados/'.$item->picture) }}" width="100px" height="50px" alt="destacados imagen">
                                 </td>
-                                <td>{{ $item->discount }}</td>
                                 <td>
-                                    <a href="{{ route('edit-destacados', $item->id) }}" class="btn btn-success btn-sm">Editar</a>
+                                    <a href="{{ route('edit-destacados', $item->id) }}" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a>
 
                                     {{-- <a id="{{ $item->id }}" onclick="document.getElementById('id01').style.display='block'" href="#" class="btn btn-danger btn-sm">Delete</a> --}}
                                     <button type="button" id="{{ $item->id }}" onclick="action(this.id)" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal">
-                                        Eliminar
+                                        <i class="fa fa-trash"></i>
                                     </button>
                                 </td>
                             </tr>
@@ -56,7 +58,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="deleteModalLabel">¿Seguro que desea eliminar este destacado?</h5>
+          <h5 class="modal-title" id="deleteModalLabel">¿Seguro que desea eliminar esta oferta?</h5>
           <button type="button" class="btn btn-sm border shadow-0" data-dismiss="modal" aria-label="Close">
             <i class="fa fa-times"></i>
           </button>

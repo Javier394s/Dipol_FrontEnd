@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
 
-            <a class="navbar-brand" href=""><img src="{{ asset("/images/logodipol.png") }}" class="img-fluid" alt="Logo" width="115"></a>
+            <a class="navbar-brand" href=""><img src="{{ asset("/images/logodipol.png") }}" class="img-fluid" alt="Logo" width="155"></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -285,10 +285,10 @@
                                     <div class="class-thumb">
                                         <img src="{{ asset('uploads/destacados/'.$item->picture) }}" class="img-fluid" alt="Class">
 
-                                        <div class="class-info">
+                                        {{--<div class="class-info">
                                             <h3 class="mb-1">{{ $item->name }}</h3>
 
-                                            {{--REVISAR EL PORCENTAJE Y SI ESTA VACIO--}} <span class="class-price">-%{{ $item->discount }}</span>
+                                            <span class="class-price">-%{{ $item->discount }}</span>
                                             <p class="mt-3">
                                                 <i class="fa fa-envelope-o mr-1"></i>
                                                 <a href="#">saladeventacasamatriz@dipolsa.com</a>
@@ -301,7 +301,7 @@
                                                 <i class="fa fa-whatsapp mr-1"></i>
                                                 <a href="#">+503 7837-6752</a>
                                             </p>
-                                        </div>
+                                        </div>--}}
                                     </div>
                                 </div>
                             @endforeach
@@ -312,7 +312,6 @@
                         @endif
                 </div>
         </div>
-    {{--@include('frontend.ofertas.ofertas')--}}
 </section>
 
     <!-- CONTACT -->

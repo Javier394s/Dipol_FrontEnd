@@ -1,5 +1,5 @@
 
- 
+
   @font-face {
     font-family: 'Plain';
     src: url('../fonts/Plain-Regular.woff2') format('woff2'),
@@ -49,7 +49,7 @@
   --h5-font-size:         22px;
   --h6-font-size:         22px;
 
-  
+
   --p-font-size:          18px;
   --base-font-size:       16px;
   --menu-font-size:       14px;
@@ -66,7 +66,7 @@ body {
 
 
 /*---------------------------------------
-  TYPOGRAPHY              
+  TYPOGRAPHY
 -----------------------------------------*/
 
 h1,h2,h3,h4,h5,h6 {
@@ -117,7 +117,7 @@ p {
   line-height: 1.5em;
 }
 
-b, 
+b,
 strong {
   font-weight: var(--font-weight-bold);
   letter-spacing: 0;
@@ -234,9 +234,9 @@ align-items: center;
 
 /* Dropdown Menu */
 .navbar-custom .dropdown:hover > .dropdown-menu {
-display: block; 
+display: block;
 min-width: auto;
-animation: fadeDropdown 0.2s; 
+animation: fadeDropdown 0.2s;
 }
 
 @keyframes fadeDropdown {
@@ -253,7 +253,7 @@ animation: fadeDropdown 0.2s;
 cursor: default;
 }
 
-.navbar-custom .dropdown-toggle:focus { 
+.navbar-custom .dropdown-toggle:focus {
 outline: 0;
 }
 
@@ -314,9 +314,9 @@ opacity: 0.2;
   line-height:120%;
   padding:10px 15px;
  }
- 
+
  /* items del menu desplegable al pasar el ratÃ³n */
- 
+
  #navbarNav ul li:hover > ul {
   display:block;
  }
@@ -367,7 +367,7 @@ opacity: 0.2;
 
 
 /*---------------------------------------
-  GENERAL               
+  GENERAL
 -----------------------------------------*/
 
 * {
@@ -390,8 +390,8 @@ a {
   transition: all 0.3s ease;
 }
 
-a:hover, 
-a:active, 
+a:hover,
+a:active,
 a:focus {
   color: var(--primary-color);
   outline: none;
@@ -436,7 +436,7 @@ a:focus {
 
 
 /*---------------------------------------
-  MODAL              
+  MODAL
 -----------------------------------------*/
 
 .modal-content {
@@ -456,7 +456,7 @@ a:focus {
 
 
 /*---------------------------------------
-  FEATURE          
+  FEATURE
 -----------------------------------------*/
 
 .feature {
@@ -466,11 +466,11 @@ a:focus {
 
 
 /*---------------------------------------
-  MENU             
+  MENU
 -----------------------------------------*/
 
 .navbar {
-  background: var(--gray-color);
+  background: var(--white-color);
   padding: 1rem;
 }
 
@@ -631,11 +631,11 @@ margin-left: 0.625rem;
 /* end of navigation */
 
 /*---------------------------------------
-  HERO              
+  HERO
 -----------------------------------------*/
 
 .hero {
-  background-image: url('../images/prueba.jpg');
+  background-image: url('../images/bannerprueba.jpg');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -646,7 +646,7 @@ margin-left: 0.625rem;
 
 
 /*---------------------------------------
-  CLASS               
+  CLASS
 -----------------------------------------*/
 
 .class-section {
@@ -692,7 +692,7 @@ margin-left: 0.625rem;
 
 
 /*---------------------------------------
-  SCHEDULE             
+  SCHEDULE
 -----------------------------------------*/
 
 .schedule {
@@ -742,7 +742,7 @@ margin-left: 0.625rem;
   text-transform: uppercase;
 }
 
-.table-bordered td, 
+.table-bordered td,
 .table-bordered th {
   border: 1px solid #212122;
 }
@@ -757,7 +757,7 @@ margin-left: 0.625rem;
 
 
 /*---------------------------------------
-    ABOUT & TEAM            
+    ABOUT & TEAM
 -----------------------------------------*/
 
 .about {
@@ -803,7 +803,7 @@ margin-left: 0.625rem;
 
 
 /*---------------------------------------
-  CONTACT              
+  CONTACT
 -----------------------------------------*/
 
 .webform input,
@@ -848,14 +848,14 @@ button#submit-button:hover {
 }
 
 /*---------------------------------------
-  anuncios             
+  anuncios
 -----------------------------------------*/
-#carouselAnuncios {    
+#carouselAnuncios {
   height: 520px;
 }
 
 /*---------------------------------------
-  FOOTER              
+  FOOTER
 -----------------------------------------*/
 
 .site-footer {
@@ -880,7 +880,7 @@ button#submit-button:hover {
 
 
 /*---------------------------------------
-  SOCIAL ICON              
+  SOCIAL ICON
 -----------------------------------------*/
 
 .social-icon {
@@ -912,7 +912,7 @@ button#submit-button:hover {
   margin-bottom: 20px;
 }
 /*---------------------------------------
-   RESPONSIVE STYLES              
+   RESPONSIVE STYLES
 -----------------------------------------*/
 
 @media screen and (max-width: 992px) {

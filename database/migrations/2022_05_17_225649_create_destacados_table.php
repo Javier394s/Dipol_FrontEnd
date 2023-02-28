@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create('destacados', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('company_model');
-            $table->string('year_from');
-            $table->string('year_to');
-            $table->string('discount');
+            $table->string('company_model')->nullable();
+            $table->string('year_from')->nullable();
+            $table->string('year_to')->nullable();
+            $table->string('discount'->nullable());
             $table->string('picture');
             $table->timestamps();
         });

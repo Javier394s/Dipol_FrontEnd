@@ -26,7 +26,7 @@
                 <a class="navbar-brand" href="{{route('home')}}">
                     <img
                         src="{{ asset('images/logodipol.png')}}"
-                        height="55"
+                        height="100"
                         alt="logo"
                         loading="lazy"
                         />
@@ -42,8 +42,21 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto" >
                         <!-- Authentication Links -->
+                        <a href="{{ url('home-slide') }}" class="navbar-brand">
+                            <i class="fas fa-calendar fa-fw me-3"></i
+                            ><span>Slides Anuncios</span>
+                        </a>
+                        <a href="{{ url('home-products') }}" class="navbar-brand">
+                        <i class="fas fa-folder fa-fw me-3"></i><span>Productos</span>
+                        </a>
+                        <a href="{{ route('home-destacados') }}" class="navbar-brand">
+                            <i class="fas fa-star fa-fw me-3"></i><span>Ofertas</span>
+                        </a>
+                        <a href="{{ route('home-datos') }}" class="navbar-brand">
+                            <i class="fas fa-home fa-fw me-3"></i><span>Datos</span>
+                        </a>
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">

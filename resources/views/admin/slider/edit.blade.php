@@ -31,14 +31,14 @@
                             <label for="">Descripción</label>
                             <textarea name="descripcion" class="form-control">{{ $slider->descripcion }}</textarea>
                         </div>
-                        <div class="form-group">
+                        {{--<div class="form-group">
                             <label for="">Link</label>
                             <input type="text" name="link" value="{{ $slider->link }}" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="">Nombre link</label>
                             <input type="text" name="link_name" value="{{ $slider->link_name }}" class="form-control">
-                        </div>
+                        </div>--}}
                         <div class="form-group">
                             <label for="">Subir imagen</label>
                             <input type="file" name="image" class="form-control">

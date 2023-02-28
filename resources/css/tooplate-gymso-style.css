@@ -469,7 +469,7 @@
   -----------------------------------------*/
 
   .navbar {
-    background: var(--gray-color);
+    background: var(#053479);
     padding: 1rem;
   }
 
@@ -634,7 +634,7 @@
   -----------------------------------------*/
 
   .hero {
-    background-image: url('../images/prueba.jpg');
+    background-image: url('../images/bannerprueba.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;

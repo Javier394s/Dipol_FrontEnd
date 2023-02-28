@@ -10,7 +10,7 @@
                     <div class="card-header">
                         <h4>
                             Datos
-                            <a style="margin-left: 500px" href="{{ url('add-datos') }}" class="btn btn-primary btn-sm float-right">Agregar Datos</a>
+                            <!--<a style="margin-left: 500px" href="{{ url('add-datos') }}" class="btn btn-primary btn-sm float-right">Agregar Datos</a>-->
                         </h4>
                     </div>
                     <div class="card-body">

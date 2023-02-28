@@ -14,7 +14,7 @@
             <div class="card">
                 <div class="card-header">
                     <h4>
-                        Editar Destacados
+                        Editar Oferta
                         <a style="margin-left: 500px" href="{{ route('home-destacados') }}" class="btn btn-danger btn-sm float-right">REGRESAR</a>
                     </h4>
                 </div>
@@ -25,10 +25,10 @@
                         @method('PUT')
 
                         <div class="form-group">
-                            <label for="">Nombre del repuesto</label>
+                            <label for="">Titulo de la oferta</label>
                             <input type="text" name="name" class="form-control" value="{{ $destacados->name }}">
                         </div>
-                        <div class="form-group">
+                        {{--<div class="form-group">
                             <label for="">Marca y Modelo</label>
                             <input type="text" name="company_model" class="form-control" value="{{ $destacados->company_model }}">
                         </div>
@@ -47,7 +47,7 @@
                         <div class="form-group">
                             <label for="">Fecha a eliminar</label>
                             <input type="datetime-local" name="date" class="form-control" value="{{ $destacados->date }}">
-                        </div>
+                        </div>--}}
                         <div class="form-group pb-2">
                             <label for="">Subir Imagen</label>
                             <input type="file" name="picture" class="form-control" value="{{ $destacados->picture }}">
