@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use App\Models\Configuracion;
 use App\Http\Auth;
+use App\Models\Dato;
 
 class ProductController extends Controller
 {
@@ -31,11 +32,12 @@ class ProductController extends Controller
     {
         $data=Product::all();
         $config = Configuracion::first();
-        return view('products.products', compact('data', 'config'));
+        $dato = Dato::all();
+        return view('products.products', compact('data', 'config', 'dato'));
 
     }
 
-   
+
 
     public function create()
     {

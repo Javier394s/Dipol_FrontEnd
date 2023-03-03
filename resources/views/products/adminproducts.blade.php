@@ -18,11 +18,9 @@
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th>Marca</th>
+                                    <th>Categoría</th>
                                     <th>Nombre del producto</th>
-                                    <th>Modelo</th>
                                     <th>Imagen</th>
-                                    <th>Año(s)</th>
                                     <th>Editar</th>
                                 </tr>
                             </thead>
@@ -31,11 +29,9 @@
                                 <tr>
                                 <td>{{ $product->brand }}</td>
                                 <td>{{ $product->title }}</td>
-                                <td>{{ $product->model }}</td>
                                 <td>
                                     <img src="{{ asset('uploads/products/'.$product->image) }}" width="100px" height="50px" alt="product imagen">
                                 </td>
-                                <td>{{ $product->years }}</td>
                                 <td>
                                     <a href="{{ url('edit-product/'.$product->id) }}" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a>
                                     <button type="button" id="{{ $product->id }}" onclick="action(this.id)" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal">

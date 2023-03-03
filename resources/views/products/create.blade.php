@@ -24,17 +24,17 @@
                         @csrf
 
                         <div class="form-group">
-                            <label for="">Marca</label>
+                            <label for="">Categoría</label>
                             <input type="text" name="brand" class="form-control">
                         </div>
-                        <div class="form-group">
+                        {{--<div class="form-group">
                             <label for="">Modelo</label>
                             <textarea name="model" class="form-control"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="">Año(s)</label>
                             <input type="text" name="years" class="form-control">
-                        </div>
+                        </div>--}}
                         <div class="form-group">
                             <label for="">Nombre del producto</label>
                             <input type="text" name="title" class="form-control">
@@ -44,7 +44,7 @@
                             <label for="">Subir imagen</label>
                             <input type="file" name="image" class="form-control">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="margin-top: 15px">
                             <button type="submit" class="btn btn-primary">Agregar</button>
                         </div>
                     </form>

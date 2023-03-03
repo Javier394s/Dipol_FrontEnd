@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
 
-            <a class="navbar-brand" href=""><img src="{{ asset("/images/logodipol.png") }}" class="img-fluid" alt="Logo" width="155"></a>
+            <a class="navbar-brand" href=""><img src="{{ asset("/images/logodipol.png") }}" class="img-fluid" alt="Logo" width="130"></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">

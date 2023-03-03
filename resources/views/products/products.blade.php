@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-<title>Multipart</title>
+<title>Dipol</title>
 
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -24,67 +24,63 @@
 
 <!-- MENU BAR -->
 <nav class="navbar navbar-expand-lg fixed-top">
-<div class="container">
+    <div class="container">
 
-<a class="navbar-brand" href="{{ url("/") }}"><img src="{{ asset("/images/log-azul-pnggg2.png") }}" class="img-fluid" alt="Logo" width="115"></a>
+        <a class="navbar-brand" href="{{ url("/") }}"><img src="{{ asset("/images/logodipol.png") }}" class="img-fluid" alt="Logo" width="130"></a>
 
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<div class="collapse navbar-collapse" id="navbarNav">
-<ul class="navbar-nav ml-lg-auto">
-<li class="nav-item">
-<a href="{{ url("/") }}" class="nav-link smoothScroll">INICIO</a>
-</li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item">
+                    <a href="{{ url("/") }}" class="nav-link smoothScroll">INICIO</a>
+                </li>
 
-<li class="nav-item">
-<a href="{{ url("/#about") }}" class="nav-link smoothScroll">ACERCA DE NOSOTROS</a>
-</li>
+                <li class="nav-item">
+                    <a href="{{ url("/#about") }}" class="nav-link smoothScroll">ACERCA DE NOSOTROS</a>
+                </li>
 
-<li class="nav-item">
-<a href="{{ url("/") }}" class="nav-link smoothScroll">PRODUCTOS</a>
-</li>
+                <li class="nav-item">
+                    <a href="{{ url("/") }}" class="nav-link smoothScroll">PRODUCTOS</a>
+                </li>
 
-<li class="nav-item dropdown" style="list-style:none">
-<a href="{{ url("/#promociones") }}" class="nav-link smoothScroll">OFERTAS</a>
-<ul>
-<li class="dropdown-item"><a class="item-text" href="{{ url("/#destacados") }}">DESTACADOS</a></li>
-</ul>
-</li>
+                <li class="nav-item dropdown" style="list-style:none">
+                    <a href="{{ url("/#promociones") }}" class="nav-link smoothScroll" id="navbarDropdown1">OFERTAS</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1"></div>
+                </li>
 
-<li class="nav-item dropdown">
-<a href="{{ url("/#contact") }}" class="nav-link smoothScroll">CONTACTO</a>
-<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-<ul>
-<li class="dropdown-item"><a class="item-text" href="{{ url("/#contact") }}">SANTA ANA</a></li>
-<li class="dropdown-item"><a class="item-text" href="{{ url("/#contacttitle") }}">SAN SALVADOR</a></li>
-</ul>
-</div>
-</li>
+                <li class="nav-item" style="list-style:none">
+                    <a>⠀</a>
+                </li>
 
-<li class="nav-item" style="list-style:none">
-<a href="{{ url("/#anuncios") }}" class="nav-link smoothScroll">ANUNCIOS</a>
-</li>
-</ul>
+                <li class="nav-item dropdown" style="list-style:none">
+                    <a href="{{ url("/#contact") }}" class="nav-link smoothScroll" id="navbarDropdown">CONTACTO</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"></div>
+                    <ul>
+                        <li class="dropdown-item"><a class="item-text" href="{{ url("/#contact") }}">CASA MATRIZ</a></li>
+                        <li class="dropdown-item"><a class="item-text" href="{{ url("/#contact2") }}">SANTA ANA</a></li>
+                        <li class="dropdown-item"><a class="item-text" href="{{ url("/#contacttitle") }}">SAN SALVADOR</a></li>
+                    </ul>
+                </li>
 
-<ul class="social-icon ml-lg-3">
-<li><a href="https://www.facebook.com/profile.php?id=100072798421030" class="fa fa-facebook" target="_blank"></a></li>
+                <li class="nav-item" style="list-style:none">
+                    <a href="{{ url("/#anuncios") }}" class="nav-link smoothScroll">ANUNCIOS</a>
+                </li>
+            </ul>
 
-<li><a href="https://api.whatsapp.com/send?phone=+503 7783 9827" class="fa fa-whatsapp" target="_blank"></a></li>
+            <ul class="social-icon ml-lg-3">
+                <li><a href="https://www.facebook.com/profile.php?id=100048586663774" class="fa fa-facebook" target="_blank"></a></li>
 
-</ul>
-</div>
+                <li><a href="https://api.whatsapp.com/send?phone=50378376752" class="fa fa-whatsapp" target="_blank"></a></li>
 
-</div>
+            </ul>
+        </div>
+
+    </div>
 </nav>
-
-<section>
-
-</section>
-<!-- Toyota -->
-<!--Acá empieza-->
 
 <section class="class-section" id="promociones">
 <div class="container">
@@ -100,10 +96,10 @@ aria-label="Toggle navigation">
                                 <div class="class-thumb">
                                 <img id="cardsProducts" src="{{ asset('uploads/products/'.$product->image) }}"  class="img-fluid" alt="product imagen">
 
-                                    <div class="class-info">
+                                    {{--<div class="class-info">
                                         <h3 class="mb-1">{{$product['title']}}</h3>
                                         <p class="mt-3">{{$product['brand']}} - {{$product['model']}}</p>
-                                        
+
                                         <p class="mt-3">Año(s): {{$product['years']}}</p>
                                         <p class="mt-3">
                                             <i class="fa fa-envelope-o mr-1"></i>
@@ -117,7 +113,7 @@ aria-label="Toggle navigation">
                                             <i class="fa fa-whatsapp mr-1"></i>
                                             <a href="#" target="_blank">{{$config->wa_ss}}</a>
                                         </p>
-                                    </div>
+                                    </div>--}}
                                 </div>
 </div>
 
@@ -129,25 +125,28 @@ aria-label="Toggle navigation">
 
 <!-- FOOTER -->
 <footer class="site-footer">
-<div class="container">
-<div class="row">
+    <div class="container">
+        <div class="row">
+                <div class="ml-auto col-lg-4 col-md-5">
+                    <p class="copyright-text">Copyright &copy; 2023</p>
+                    <p>Dipol SA de CV</p>
+                </div>
 
-<div class="ml-auto col-lg-4 col-md-5">
-<p class="copyright-text">Copyright &copy; 2022
-</div>
+                <div class="d-flex justify-content-center mx-auto col-lg-8 col-md-7 col-12">
+                    <p class="mr-4">
+                        <i class="fa fa-envelope-o mr-1"></i>
+                        <a href="{{ url("#") }}">saladeventacasamatriz@dipolsa.com</a>
+                    </p>
+                    @foreach ($dato as $datos)
+                    <p><i class="fa fa-phone mr-1"></i>
+                    {{$datos->fijo_matriz}}</p>
+                    @endforeach
+                </div>
 
-<div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
-<p class="mr-4">
-<i class="fa fa-envelope-o mr-1"></i>
-<a href="{{ url("#") }}">ventas@multipartsv.com</a>
-</p>
-
-<p><i class="fa fa-phone mr-1"></i> 2440 3772</p>
-</div>
-</div>
-</div>
-</div>
+        </div>
+    </div>
 </footer>
+
 
 <!-- SCRIPTS -->
 <script src="{{ asset("/js/jquery.min.js") }}"></script>
