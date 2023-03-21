@@ -30,7 +30,7 @@ class ProductController extends Controller
 
     public function index()
     {
-        $data=Product::all();
+        $data=Product::simplePaginate(15);
         $config = Configuracion::first();
         $dato = Dato::all();
         return view('products.products', compact('data', 'config', 'dato'));

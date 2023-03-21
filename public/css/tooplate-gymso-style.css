@@ -454,6 +454,13 @@ a:focus {
   color: var(--primary-color);
 }
 
+#products img{
+    transition: all 300ms;
+    margin-bottom: 30px;
+}
+#products img:hover{
+    transform: scale(1.15);
+}
 
 /*---------------------------------------
   FEATURE

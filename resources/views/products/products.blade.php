@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-<title>Dipol</title>
+<title>Dipol - Products</title>
 
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -11,6 +11,7 @@
 <meta name="author" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+<link rel="icon" href="{{ asset("/images/logodipol.png") }}">
 <link rel="stylesheet" href="{{ asset("/css/bootstrap.min.css") }}">
 <link rel="stylesheet" href="{{ asset("/css/font-awesome.min.css") }}">
 <link rel="stylesheet" href="{{ asset("/css/aos.css") }}">
@@ -52,10 +53,6 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown1"></div>
                 </li>
 
-                <li class="nav-item" style="list-style:none">
-                    <a>⠀</a>
-                </li>
-
                 <li class="nav-item dropdown" style="list-style:none">
                     <a href="{{ url("/#contact") }}" class="nav-link smoothScroll" id="navbarDropdown">CONTACTO</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown"></div>
@@ -83,44 +80,28 @@
 </nav>
 
 <section class="class-section" id="promociones">
-<div class="container">
-<div class="row">
+    <div class="container">
+        <div class="row">
 
-<div class="col-lg-12 col-12 text-center mb-5" style="margin-top:100px;">
-<h2 data-aos="fade-up" data-aos-delay="200" >Productos</h2>
-</div>
+            <div class="col-lg-12 col-12 text-center mb-5" style="margin-top:100px;">
+                <h2 data-aos="fade-up" data-aos-delay="200" >Productos</h2>
+            </div>
 
-@foreach($data as $product)
+            @foreach($data as $product)
 
-<div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
-                                <div class="class-thumb">
-                                <img id="cardsProducts" src="{{ asset('uploads/products/'.$product->image) }}"  class="img-fluid" alt="product imagen">
-
-                                    {{--<div class="class-info">
-                                        <h3 class="mb-1">{{$product['title']}}</h3>
-                                        <p class="mt-3">{{$product['brand']}} - {{$product['model']}}</p>
-
-                                        <p class="mt-3">Año(s): {{$product['years']}}</p>
-                                        <p class="mt-3">
-                                            <i class="fa fa-envelope-o mr-1"></i>
-                                            <a href="#" target="_blank">{{$config->correo_sa}}</a>
-                                        </p>
-                                        <p class="mt-3">
-                                            <i class="fa fa-whatsapp mr-1"></i>
-                                            <a href="#" target="_blank">{{$config->wa_sa}}</a>
-                                        </p>
-                                        <p class="mt-3">
-                                            <i class="fa fa-whatsapp mr-1"></i>
-                                            <a href="#" target="_blank">{{$config->wa_ss}}</a>
-                                        </p>
-                                    </div>--}}
-                                </div>
-</div>
-
-@endforeach
+            <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                <div class="class-thumb" id="products">
+                    <img id="cardsProducts" src="{{ asset('uploads/products/'.$product->image) }}"  class="img-fluid" alt="product imagen">
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        {{ $data->links() }}
+    </div>
 
 </section>
-
 <!--ACÁ TERMMINA-->
 
 <!-- FOOTER -->

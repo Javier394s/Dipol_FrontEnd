@@ -11,6 +11,7 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <link rel="icon" href="{{ asset("/images/logodipol.png") }}">
     <link rel="stylesheet" href="{{ asset("/css/bootstrap.min.css") }}">
     <link rel="stylesheet" href="{{ asset("/css/font-awesome.min.css") }}">
     <link rel="stylesheet" href="{{ asset("/css/aos.css") }}">
@@ -52,9 +53,9 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown1"></div>
                     </li>
 
-                    <li class="nav-item" style="list-style:none">
+                    <!--<li class="nav-item" style="list-style:none">
                         <a>⠀</a>
-                    </li>
+                    </li>-->
 
                     <li class="nav-item dropdown" style="list-style:none">
                         <a href="{{ url("#contact") }}" class="nav-link smoothScroll" id="navbarDropdown">CONTACTO</a>
@@ -88,21 +89,22 @@
 
             <div class="bg-overlay"></div>
 
-            <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 col-md-10 mx-auto col-12">
-                            <!--<div class="hero-text mt-5 text-center">
-
-                                    <h2 style="color: whitesmoke;" data-aos="fade-up" data-aos-delay="300">Venta de carrocería, luces y accesorios nuevos para vehículos</h6>
-
-                                    <h1 style="margin-top: 120px;" class="text-white" data-aos="fade-up" data-aos-delay="300">Multipart is champion</h1>
-                                    <h1 style="margin-top: 220px;" class="text-white" data-aos="fade-up" data-aos-delay="500">"CALIDAD Y RAPIDEZ A BUEN PRECIO"</h1>
-                            </div>-->
-                        </div>
-                    </div>
             </div>
     </section>
+    <section class="about section" style="text-align: justify">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-md-10 mx-auto col-12">
+                <div class="hero-text mt-5 text-center">
 
+                        <!--<h1 style="color: black;" data-aos="fade-up" data-aos-delay="300">DIPOL S.A DE C.V</h1>-->
+
+                        <h1  class="text-black" data-aos="fade-up" data-aos-delay="300">Distribuidora de materias primas</h1>
+                        <h1  class="text-black" data-aos="fade-up" data-aos-delay="500">para calzado y otras industrias afines.</h1>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="feature" id="feature">
         @foreach ($dato as $datos)
         <div class="container" >
@@ -379,7 +381,7 @@
                             <a href="{{ url("#") }}" target="_blank">{{$datos->wa_ss}}</a>
                         </p>
 
-                        <img src="{{ asset("/images/dipolmatriz.jpg") }}" class="img-fluid" alt="Logo">
+                        <img src="{{ asset("/images/dipolsansalvador.jpg") }}" style="height: 300px" class="img-fluid" alt="dipol s.s">
 
                     </div>
 
