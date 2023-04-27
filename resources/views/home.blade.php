@@ -2,9 +2,9 @@
 @section('title', 'Home')
 
 @section('content')
-<section style="margin-top: 50px">
+<section class="admin d-flex flex-column" style="margin-top: -20px" >
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" style="margin-top: 50px">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('ADMIN PANEL') }}</div>

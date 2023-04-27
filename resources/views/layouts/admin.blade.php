@@ -9,9 +9,11 @@
     </title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <link rel="stylesheet" href="{{ asset("assets/css/bootstrap.min.css") }}">
-    <link rel="stylesheet" href="{{ asset("assets/css/mdb.min.css") }}">
-    <link rel="stylesheet" href="{{ asset("assets/css/style.css") }}">
+    {{-- <link rel="stylesheet" href="{{ asset("assets/css/bootstrap.min.css") }}">
+    <link rel="stylesheet" href="{{ asset("assets/css/mdb.min.css") }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset("assets/css/style.css") }}"> --}}
+    <link rel="stylesheet" href="{{ asset("/css/tooplate-gymso-style.css") }}">
+
     <style>
         /* Sidebar */
     .sidebar {
@@ -57,7 +59,7 @@
     <script src="{{ asset("/js/aos.js") }}"></script>
     <script src="{{ asset("/js/smoothscroll.js") }}"></script>
     <script src="{{ asset("/js/custom.js") }}"></script>
-    <script src="{{ asset("/js/mdb.min.js") }}"></script>
+    {{-- <script src="{{ asset("/js/mdb.min.js") }}"></script> --}}
 
 </body>
 </html>
