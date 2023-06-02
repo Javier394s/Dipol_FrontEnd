@@ -13,7 +13,7 @@
             <div class="card">
                 <div class="card-header">
                     <h4>
-                        Editar Slider
+                        Editar Anuncio
                         <a style="margin-left: 500px" href="{{ url('home-slide') }}" class="btn btn-danger btn-sm float-right">REGRESAR</a>
                     </h4>
                 </div>
@@ -49,7 +49,7 @@
                             <input type="checkbox" name="status" {{ $slider->status == '1' ? 'checked':'' }}>  Marcar para ocultar
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Agregar</button>
+                            <button type="submit" class="btn btn-primary">Actualizar</button>
                         </div>
                     </form>
 

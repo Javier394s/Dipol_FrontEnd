@@ -51,6 +51,7 @@
                         <div class="form-group pb-2">
                             <label for="">Subir Imagen</label>
                             <input type="file" name="picture" class="form-control" value="{{ $destacados->picture }}">
+                            <img src="{{ asset('uploads/destacados/'.$destacados->picture) }}" width="100px" height="50px" alt="ofertas imagen">
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary">Guardar</button>
