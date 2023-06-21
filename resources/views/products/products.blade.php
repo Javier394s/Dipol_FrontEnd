@@ -79,7 +79,7 @@
     </div>
 </nav>
 
-<section class="class-section" id="promociones">
+<section class="about section" id="about">
     <div class="container">
         <div class="row">
 
@@ -89,7 +89,7 @@
 
             @foreach($data as $product)
 
-            <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+            <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400" >
                 <div class="class-thumb" id="products">
                     <img id="cardsProducts" src="{{ asset('uploads/products/'.$product->image) }}"  class="img-fluid" alt="product imagen">
                 </div>
