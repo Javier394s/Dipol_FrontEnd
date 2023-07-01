@@ -1,7 +1,7 @@
 <section class="contact section" id="anuncios">
     <h2 class="mb-4" id="txt"> ANUNCIOS </h2>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner" data-interval="6000">
+    <div class="carousel-inner" data-interval="10000">
 
         @php $i = 1; @endphp
         @foreach ($slider as $slideritem)
